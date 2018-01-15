@@ -1,0 +1,171 @@
+{
+  "basics": {
+    "name": "Carsten Daurehøj",
+    "label": "Programmer",
+    "picture": "/assets/profile-image.png",
+    "email": "arelstone@gmail.com",
+    "phone": "+45 61 46 15 71",
+    "website": "",
+    "summary": "Mit navn er Carsten Daurehøj. Jeg er 32 år og brænder for udvikling. <br> Programmering er ikke et job - Det er min hobby. Min passion er at lave en lægger frontend der er imødekommende og lækker for brugeren.<br><br>Jeg er humoristisk, mødestabil, flittig og ønsker altid at blive dygtigere. Jeg trives i et dumanisk arbejdsmiljø, hvor jeg samtidig kan være med til at påvirke mine arbejdeopgaver.",
+    "location": {
+      "address": "Søborg Parkallé 56",
+      "postalCode": "2860",
+      "city": "Søborg",
+      "countryCode": "DK",
+      "region": "Denmark"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "john",
+        "url": "http://twitter.com/john"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Risma Systems",
+      "position": "Senior Software developer",
+      "website": "http://rismasystems.dk",
+      "startDate": "Maj 2017",
+      "endDate": "Pt.",
+      "summary": "Description...",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "company": "IT Sharevision",
+      "position": "IT konsulent",
+      "website": "http://it-sharevision.dk",
+      "startDate": "Maj 2017",
+      "endDate": "Aug. 2017",
+      "summary": "Description...",
+      "highlights": [
+        "Udviklin af App samt RESTful webservice (hhv. React Native og Laravel) til bortauktionering af ejendele, fra self-storage",
+        "Implementering af agil arbejdsmetode i form af kanban"
+      ]
+    },
+    {
+      "company": "Firmafon",
+      "position": "Udvikliner",
+      "website": "http://firmafon.dk",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Description...",
+      "highlights": [
+        "Udvikling og optimering af features til webportal i React",
+        "Udvikling af feature til Firmafon appen i React Native, til at synkronisere kollegaers telefonnumre og e-mail addresser til telefonens kontakter",
+        "Code review"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "gpa": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": 10,
+      "icon": "icon/html.png",
+      "type": "language"
+    },
+    {
+      "name": "CSS",
+      "level": 10,
+      "icon": "",
+      "type": "language"
+    },
+    {
+      "name": "Vue.js",
+      "level": 7,
+      "icon": "",
+      "type": "framework"
+    },
+    {
+      "name": "AngularJS 1.x",
+      "level": 7,
+      "icon": "",
+      "type": "framework"
+    },
+    {
+      "name": "D3.js",
+      "level": 3,
+      "icon": "",
+      "type": "framework"
+    },
+    {
+      "name": "JavaScript",
+      "level": 8,
+      "icon": "",
+      "type": "Language"
+    },
+    {
+      "name": "npm / yarn",
+      "level": 8,
+      "icon": "",
+      "type": "other"
+    },
+    {
+      "name": "Windows Azure",
+      "level": 5,
+      "icon": "",
+      "type": "other"
+    },
+    {
+      "name": "Grunt",
+      "level": 5,
+      "icon": "",
+      "type": "other"
+    },
+    {
+      "name": "Gulp",
+      "level": 5,
+      "icon": "",
+      "type": "other"
+    },
+    {
+      "name": "Git",
+      "level": 9,
+      "icon": "",
+      "type": "other"
+    },
+    {
+      "name": "Bower",
+      "level": 5,
+      "icon": "",
+      "type": "other"
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "level": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference..."
+    }
+  ]
+}
