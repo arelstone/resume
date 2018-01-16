@@ -1,5 +1,5 @@
 import { ucFirst } from './UpperCaseFirst'
 
-export default {
+export {
   ucFirst
 }

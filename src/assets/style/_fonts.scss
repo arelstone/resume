@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=BioRhyme:200,400|Lato:100,300,400,700|Open+Sans+Condensed:300|Oswald:200,300,400');
+
+@mixin BioRhyme {
+  font-family: 'BioRhyme', serif;
+}
+
+@mixin OpenSansCondensed {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+@mixin Oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+@mixin Lato {
+  font-family: 'Lato', sans-serif;
+}
+
+@mixin FontThin {
+  font-weight: 100;
+}
+
+@mixin FontLight {
+  font-weight: 300;
+}
+
+@mixin FontBold {
+  font-weight: 700;
+}

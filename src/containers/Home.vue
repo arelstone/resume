@@ -11,6 +11,10 @@
         <profile :text="resume.basics.summary"></profile>
         <work :work="resume.work"></work>
         <skills :skills="resume.skills"></skills>
+        <div>{{resume.education}}</div>
+        <div>{{resume.languages}}</div>
+        <div>{{resume.interests}}</div>
+        <div>{{resume.references}}</div>
     </div>
 </template>
 

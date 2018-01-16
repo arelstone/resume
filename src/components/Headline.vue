@@ -1,5 +1,7 @@
 <template>
-    <h2 class="headline">&lt;{{uc_first}}&gt;</h2>
+    <div id="Headline">
+        <h2>&lt;{{uc_first}} /&gt;</h2>
+    </div>
 </template>
 
 <script>
@@ -17,10 +19,15 @@
 </script>
 
 <style scoped lang="scss">
-    @import '../assets/style/_variables.scss';
+    @import '../assets/style/variables';
+    @import '../assets/style/fonts';
 
-    h2.headline {
-        color: $headline-color;
-        border-bottom: 1px solid $border-color;
+    #Headline {
+        @include BioRhyme;
+        h2 {
+            @include FontThin;
+            color: $headline-color;
+            border-bottom: 1px solid $border-color;
+        }
     }
 </style>

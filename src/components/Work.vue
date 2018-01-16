@@ -1,10 +1,10 @@
 <template>
-    <div class="row">
+    <div class="row" id="work">
         <div class="col-12">
             <headline text="Erfarring"/>
         </div>
         <div class="col-12">
-            <work-item v-for="item in work" :work="item"/>
+            <work-item v-for="item, index in work" :work="item" :key="index"/>
         </div>
     </div>
 </template>
@@ -23,5 +23,10 @@
 </script>
 
 <style scoped lang="scss">
+    @import "../assets/style/fonts";
 
+    #work {
+        @include FontThin;
+        @include Lato;
+    }
 </style>

@@ -42,8 +42,8 @@
       "endDate": "Aug. 2017",
       "summary": "Description...",
       "highlights": [
-        "Udviklin af App samt RESTful webservice (hhv. React Native og Laravel) til bortauktionering af ejendele, fra self-storage",
-        "Implementering af agil arbejdsmetode i form af kanban"
+        "Implementering af agil arbejdsmetode i form af kanban",
+        "Udviklin af App samt RESTful webservice (hhv. React Native og Laravel) til bortauktionering af ejendele, fra self-storage"
       ]
     },
     {
@@ -57,6 +57,17 @@
         "Udvikling og optimering af features til webportal i React",
         "Udvikling af feature til Firmafon appen i React Native, til at synkronisere kollegaers telefonnumre og e-mail addresser til telefonens kontakter",
         "Code review"
+      ]
+    },
+    {
+      "company": "Eoptimo",
+      "position": "Software Udvikliner",
+      "website": "http://eoptimo.dk",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+        ""
       ]
     }
   ],
@@ -77,37 +88,72 @@
     {
       "name": "HTML",
       "level": 10,
-      "icon": "icon/html.png",
+      "icon": {
+        "src": "html5.svg"
+      },
       "type": "language"
     },
     {
       "name": "CSS",
       "level": 10,
-      "icon": "",
+      "icon": {
+        "src": "css3.svg",
+        "css": {
+          "width": "18px",
+          "margin-left": "4px"
+        }
+      },
       "type": "language"
     },
     {
       "name": "Vue.js",
       "level": 7,
-      "icon": "",
+      "icon": {
+        "src": "vuejs.svg",
+        "css": {
+          "padding": "3px"
+        }
+      },
+      "type": "framework"
+    },
+    {
+      "name": "Laravel",
+      "level": 7,
+      "icon": {
+        "src": "laravel.svg",
+        "css": {
+          "width": "18px",
+          "margin-left": "3px"
+        }
+      },
       "type": "framework"
     },
     {
       "name": "AngularJS 1.x",
       "level": 7,
-      "icon": "",
+      "icon": {
+        "src": "angular1x.svg"
+      },
       "type": "framework"
     },
     {
       "name": "D3.js",
       "level": 3,
-      "icon": "",
+      "icon": {
+        "src": "d3js.svg",
+        "css": { "padding": "3px"}
+      },
       "type": "framework"
     },
     {
       "name": "JavaScript",
       "level": 8,
-      "icon": "",
+      "icon": {
+        "src": "javascript.svg",
+        "css": {
+          "padding": "4px"
+        }
+      },
       "type": "Language"
     },
     {
@@ -119,7 +165,9 @@
     {
       "name": "Windows Azure",
       "level": 5,
-      "icon": "",
+      "icon": {
+        "src": "azure.svg"
+      },
       "type": "other"
     },
     {
@@ -137,8 +185,47 @@
     {
       "name": "Git",
       "level": 9,
-      "icon": "",
+      "icon": {
+        "src": "git.svg",
+        "css": {
+          "padding": "3px"
+        }
+      },
       "type": "other"
+    },
+    {
+      "name": "Bash",
+      "level": 4,
+      "icon": {
+        "src": "bash.svg",
+        "css": { "padding": "3px"}
+      },
+      "type": "language"
+    },
+    {
+      "name": "PHP",
+      "level": 7,
+      "icon": {
+        "src": "php.svg"
+      },
+      "type": "language"
+    },
+    {
+      "name": "SQL",
+      "level": 7,
+      "icon": {
+        "src": "sql.svg",
+        "css": { "padding": "3px"}
+      },
+      "type": "language"
+    },
+    {
+      "name": "jQuery",
+      "level": 7,
+      "icon": {
+        "src": "jquery.svg"
+      },
+      "type": "framework"
     },
     {
       "name": "Bower",
@@ -149,13 +236,16 @@
   ],
   "languages": [
     {
-      "name": "English",
+      "name": "Danish",
       "level": "Native speaker"
+    },{
+      "name": "English",
+      "level": "Master"
     }
   ],
   "interests": [
     {
-      "name": "Wildlife",
+      "name": "Judo",
       "keywords": [
         "Ferrets",
         "Unicorns"
