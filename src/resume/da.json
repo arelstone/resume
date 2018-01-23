@@ -16,9 +16,14 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "john",
-        "url": "http://twitter.com/john"
+        "network": "Github",
+        "username": "arelstone",
+        "url": "http://github.com/arelstone"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Carsten Daurehøj",
+        "url": "https://www.linkedin.com/in/carsten-daurehøj-a987a450/"
       }
     ]
   },
@@ -27,8 +32,8 @@
       "company": "Risma Systems",
       "position": "Senior Software developer",
       "website": "http://rismasystems.dk",
-      "startDate": "Maj 2017",
-      "endDate": "Pt.",
+      "startDate": "2017",
+      "endDate": "Nu",
       "summary": "Description...",
       "highlights": [
         "Started the company"
@@ -38,25 +43,25 @@
       "company": "IT Sharevision",
       "position": "IT konsulent",
       "website": "http://it-sharevision.dk",
-      "startDate": "Maj 2017",
-      "endDate": "Aug. 2017",
+      "startDate": "2017",
+      "endDate": "2017",
       "summary": "Description...",
       "highlights": [
-        "Implementering af agil arbejdsmetode i form af kanban",
-        "Udviklin af App samt RESTful webservice (hhv. React Native og Laravel) til bortauktionering af ejendele, fra self-storage"
+        "Implementering af agile arbejdsmetoder i form af bl.a. Kanban",
+        "Udvikling af app samt RESTful webservice (hhv. React Native og Laravel) til bortauktionering af ejendele, fra self-storage"
       ]
     },
     {
       "company": "Firmafon",
-      "position": "Udvikliner",
+      "position": "Udvikler",
       "website": "http://firmafon.dk",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description...",
+      "startDate": "2016",
+      "endDate": "2017",
+      "summary": "",
       "highlights": [
-        "Udvikling og optimering af features til webportal i React",
-        "Udvikling af feature til Firmafon appen i React Native, til at synkronisere kollegaers telefonnumre og e-mail addresser til telefonens kontakter",
-        "Code review"
+        "Udvikling og opdatering af features til webportal i React",
+        "Udvikling af feature til Firmafon appen, i React Native, til at synkronisere kollegaers telefonnummer og e-mailaddresse til telefonens kontakter",
+        "Review af kollegaers kode"
       ]
     },
     {
@@ -67,20 +72,14 @@
       "endDate": "",
       "summary": "",
       "highlights": [
-        ""
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "University",
-      "area": "Software Development",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
-      "gpa": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL"
+        "Udvikling af en beregningsplatform til opgørelse af energibesparelser",
+        "Systemarkitektur og modelering af database",
+        "Udvikling af RESTful webservices",
+        "Design og opsætning af frontend",
+        "Data visualisering",
+        "Drift, vedligeholdelse og overvågning af Webapp hos Microsoft Azure",
+        "Administation af Office 365, Active Directory & Box.com",
+        "Diverse ad hoc opgaver, bl.a. opsætning af PCer, support for kollegaer"
       ]
     }
   ],
@@ -88,72 +87,43 @@
     {
       "name": "HTML",
       "level": 10,
-      "icon": {
-        "src": "html5.svg"
-      },
+      "icon": "html5.svg",
       "type": "language"
     },
     {
       "name": "CSS",
       "level": 10,
-      "icon": {
-        "src": "css3.svg",
-        "css": {
-          "width": "18px",
-          "margin-left": "4px"
-        }
-      },
+      "icon": "css3.svg",
       "type": "language"
     },
     {
       "name": "Vue.js",
       "level": 7,
-      "icon": {
-        "src": "vuejs.svg",
-        "css": {
-          "padding": "3px"
-        }
-      },
+      "icon": "vuejs.svg",
       "type": "framework"
     },
     {
       "name": "Laravel",
       "level": 7,
-      "icon": {
-        "src": "laravel.svg",
-        "css": {
-          "width": "18px",
-          "margin-left": "3px"
-        }
-      },
+      "icon": "laravel.svg",
       "type": "framework"
     },
     {
       "name": "AngularJS 1.x",
       "level": 7,
-      "icon": {
-        "src": "angular1x.svg"
-      },
+      "icon": "angular1x.svg",
       "type": "framework"
     },
     {
       "name": "D3.js",
       "level": 3,
-      "icon": {
-        "src": "d3js.svg",
-        "css": { "padding": "3px"}
-      },
+      "icon": "d3js.svg",
       "type": "framework"
     },
     {
       "name": "JavaScript",
       "level": 8,
-      "icon": {
-        "src": "javascript.svg",
-        "css": {
-          "padding": "4px"
-        }
-      },
+      "icon": "javascript.svg",
       "type": "Language"
     },
     {
@@ -165,9 +135,7 @@
     {
       "name": "Windows Azure",
       "level": 5,
-      "icon": {
-        "src": "azure.svg"
-      },
+      "icon": "azure.svg",
       "type": "other"
     },
     {
@@ -185,73 +153,51 @@
     {
       "name": "Git",
       "level": 9,
-      "icon": {
-        "src": "git.svg",
-        "css": {
-          "padding": "3px"
-        }
-      },
+      "icon": "git.svg",
       "type": "other"
     },
     {
       "name": "Bash",
       "level": 4,
-      "icon": {
-        "src": "bash.svg",
-        "css": { "padding": "3px"}
-      },
+      "icon": "bash.svg",
       "type": "language"
     },
     {
       "name": "PHP",
       "level": 7,
-      "icon": {
-        "src": "php.svg"
-      },
+      "icon": "php.svg",
       "type": "language"
     },
     {
       "name": "SQL",
       "level": 7,
-      "icon": {
-        "src": "sql.svg",
-        "css": { "padding": "3px"}
-      },
+      "icon": "sql.svg",
       "type": "language"
     },
     {
       "name": "jQuery",
       "level": 7,
-      "icon": {
-        "src": "jquery.svg"
-      },
+      "icon": "jquery.svg",
       "type": "framework"
     },
     {
-      "name": "Bower",
-      "level": 5,
-      "icon": "",
-      "type": "other"
+      "name": "JavaScript",
+      "level": 9,
+      "icon": "javascript.svg",
+      "type": "language"
     }
   ],
   "languages": [
     {
       "name": "Danish",
-      "level": "Native speaker"
-    },{
-      "name": "English",
-      "level": "Master"
-    }
-  ],
-  "interests": [
+      "level": "Modersmål"
+    },
     {
-      "name": "Judo",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
+      "name": "English",
+      "level": "Flydende"
     }
   ],
+  "interests": "I min fritid dyrker jeg judo. Jeg har det gule bælte.",
   "references": [
     {
       "name": "Jane Doe",

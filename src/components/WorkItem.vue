@@ -7,7 +7,6 @@
                 <h6>{{work.startDate}} - {{work.endDate}}</h6>
             </div>
             <div class="col-md-8 work-item--right">
-                <div>{{work.summary}}</div>
                 <ul>
                     <li v-for="highlight in work.highlights">{{highlight}}</li>
                 </ul>

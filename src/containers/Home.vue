@@ -8,13 +8,11 @@
                  :zip="resume.basics.location.postalCode"
                  :country="resume.basics.location.region"/>
 
-        <profile :text="resume.basics.summary"></profile>
-        <work :work="resume.work"></work>
-        <skills :skills="resume.skills"></skills>
-        <div>{{resume.education}}</div>
-        <div>{{resume.languages}}</div>
-        <div>{{resume.interests}}</div>
-        <div>{{resume.references}}</div>
+        <profile :text="resume.basics.summary"/>
+        <work :work="resume.work"/>
+        <skills :skills="resume.skills"/>
+        <interests :interests="resume.interests"/>
+        <languages :languages="resume.languages"/>
     </div>
 </template>
 
@@ -23,8 +21,8 @@
   import Profile from '../components/Profile'
   import Work from '../components/Work'
   import Skills from '../components/Skills'
-
-  const resume = require('../resources/resume.json')
+  import Interests from '../components/Interests'
+  import Languages from '../components/Languages'
 
   export default {
     name: 'Home',
@@ -32,11 +30,21 @@
       Profile,
       Contact,
       Work,
-      Skills
+      Skills,
+      Interests,
+      Languages
+    },
+    computed: {
+      language () {
+        return (navigator.language) ? navigator.language : navigator.userLanguage
+      },
+      resume () {
+        return require(`../resume/${this.language}.json`)
+      }
     },
     data () {
       return {
-        resume: resume,
+        // resume: require(`../resume/${this.language}.json`),
         msg: 'Welcome to Your Vue.js App'
       }
     }
