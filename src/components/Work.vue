@@ -19,7 +19,7 @@
   import WorkItem from './WorkItem.vue'
 
   export default {
-    name: 'Work',
+    name: 'work',
     introduction: '',
     description: '',
     token: '<work :work="[{}]" />',

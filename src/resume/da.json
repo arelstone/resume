@@ -6,7 +6,7 @@
     "email": "arelstone@gmail.com",
     "phone": "+45 61 46 15 71",
     "website": "",
-    "summary": "Mit navn er Carsten Daurehøj. Jeg er 32 år og brænder for udvikling. <br> Programmering er ikke et job - Det er min hobby. Min passion er at lave en lægger frontend der er imødekommende og lækker for brugeren.<br><br>Jeg er humoristisk, mødestabil, flittig og ønsker altid at blive dygtigere. Jeg trives i et dumanisk arbejdsmiljø, hvor jeg samtidig kan være med til at påvirke mine arbejdeopgaver.",
+    "summary": "Mit navn er Carsten Daurehøj, jeg er 32 år og brænder for udvikling. Programmering er ikke blot et job - det er min hobby! Min passion er at lave en lækker frontend der er imødekommende og brugervenlig.<br><br>Jeg er humoristisk, mødestabil, flittig og ønsker altid at blive dygtigere. Jeg trives i et dynamisk arbejdsmiljø, hvor jeg samtidig kan være med til at udforme mine arbejdsopgaver.",
     "location": {
       "address": "Søborg Parkallé 56",
       "postalCode": "2860",
@@ -17,13 +17,15 @@
     "profiles": [
       {
         "network": "Github",
-        "username": "arelstone",
-        "url": "http://github.com/arelstone"
+        "username": "@arelstone",
+        "url": "http://github.com/arelstone",
+        "icon": "github.svg"
       },
       {
         "network": "LinkedIn",
         "username": "Carsten Daurehøj",
-        "url": "https://www.linkedin.com/in/carsten-daurehøj-a987a450/"
+        "url": "https://www.linkedin.com/in/carsten-daurehøj-a987a450/",
+        "icon": "if_square-linkedin_317725.svg"
       }
     ]
   },
@@ -36,7 +38,7 @@
       "endDate": "Nu",
       "summary": "Description...",
       "highlights": [
-        "Started the company"
+        "Udvikling af GDPR løsning"
       ]
     },
     {
@@ -98,7 +100,7 @@
     },
     {
       "name": "Vue.js",
-      "level": 7,
+      "level": 8,
       "icon": "vuejs.svg",
       "type": "framework"
     },
@@ -116,8 +118,14 @@
     },
     {
       "name": "D3.js",
-      "level": 3,
+      "level": 4,
       "icon": "d3js.svg",
+      "type": "framework"
+    },
+    {
+      "name": "AmCharts.js",
+      "level": 6,
+      "icon": "amcharts_light_transparent.png",
       "type": "framework"
     },
     {
@@ -127,27 +135,39 @@
       "type": "Language"
     },
     {
-      "name": "npm / yarn",
+      "name": "yarn",
       "level": 8,
-      "icon": "",
+      "icon": "yarn.svg",
       "type": "other"
     },
     {
       "name": "Windows Azure",
-      "level": 5,
+      "level": 4,
       "icon": "azure.svg",
       "type": "other"
     },
     {
+      "name": "React",
+      "level": 7,
+      "icon": "react.svg",
+      "type": "framework"
+    },
+    {
+      "name": "React Native",
+      "level": 7,
+      "icon": "react.svg",
+      "type": "framework"
+    },
+    {
       "name": "Grunt",
-      "level": 5,
-      "icon": "",
+      "level": 6,
+      "icon": "grunt.svg",
       "type": "other"
     },
     {
       "name": "Gulp",
       "level": 5,
-      "icon": "",
+      "icon": "gulp.svg",
       "type": "other"
     },
     {
@@ -158,7 +178,7 @@
     },
     {
       "name": "Bash",
-      "level": 4,
+      "level": 3,
       "icon": "bash.svg",
       "type": "language"
     },
@@ -170,13 +190,13 @@
     },
     {
       "name": "SQL",
-      "level": 7,
+      "level": 6,
       "icon": "sql.svg",
       "type": "language"
     },
     {
       "name": "jQuery",
-      "level": 7,
+      "level": 8,
       "icon": "jquery.svg",
       "type": "framework"
     },
@@ -185,6 +205,24 @@
       "level": 9,
       "icon": "javascript.svg",
       "type": "language"
+    },
+    {
+      "name": "Illustrator",
+      "level": 6,
+      "icon": "adobe-illustrator-cc.svg",
+      "type": "other"
+    },
+    {
+      "name": "Photoshop",
+      "level": 5,
+      "icon": "photoshop-cc.svg",
+      "type": "other"
+    },
+    {
+      "name": "InDesign",
+      "level": 4,
+      "icon": "indesign-cc.svg",
+      "type": "other"
     }
   ],
   "languages": [

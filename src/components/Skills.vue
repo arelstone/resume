@@ -15,6 +15,7 @@
                                 :class="['fa fa-circle', 'skill--'+x]"></i></li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </div>
@@ -26,9 +27,8 @@
   import Headline from './Headline.vue'
 
   export default {
-    name: 'Skills',
-    introduction: 'skills',
-    description: 'A component for displaying skill-items',
+    name: 'skills',
+    description: 'A component for displaying skill-items. The skills prop will be sorted by type and filtered by level',
     token: '<skills :skills="[{name: "Some skill", level: 2, type: "language|framework|other", icon: "path/to/icon.png"}]">',
     data () {
       return {
@@ -40,7 +40,7 @@
         type: Object | Array,
         required: true,
         default: {},
-        note: 'A collection of skills. The collection will be looped thou and displayed using the <skill-item> component'
+        note: 'A collection of skills.'
       }
     },
     components: {
@@ -63,6 +63,8 @@
 </script>
 
 <style scoped lang="scss">
+    @import '../assets/style/fonts';
+
     $skill-color: #088bbf;
     $class-slug: skill-- !default;
 
@@ -85,6 +87,7 @@
                     margin-bottom: 80px;
                     margin-left: -60px;
                     text-align: right;
+                    @include FontThin;
                     img {
                         margin-bottom: -5px;
                         transform: rotate(-90deg);

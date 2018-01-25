@@ -12,7 +12,7 @@
   import Headline from './Headline.vue'
 
   export default {
-    name: 'Profile',
+    name: 'profile',
     props: {
       text: {type: String, required: true}
     },

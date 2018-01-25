@@ -5,7 +5,7 @@
 
         <p class="doc-item--introduction">{{component.introduction}}</p>
         <p class="doc-item--description">{{component.description}}</p>
-        <table>
+        <table class="doc-item--props">
             <thead>
             <tr>
                 <th>Prop name</th>
@@ -17,10 +17,16 @@
             </thead>
             <tbody>
             <tr v-for="prop in getProps">
-                <td>{{prop.key}} {{prop.required}}</td>
+                <td>
+                    <span :class="{underline: prop.required}">{{prop.key}}</span>
+                </td>
                 <td>{{prop.type}}</td>
                 <td>{{prop.default}}</td>
-                <td>{{prop.note}}</td>
+                <td>
+                    <b v-if="prop.required">Required!</b>
+                    <span v-if="!prop.required">Optional!</span>
+                    {{prop.note}}
+                </td>
             </tr>
             </tbody>
         </table>
@@ -29,7 +35,7 @@
             <pre><code class="html">{{component.token}}</code></pre>
         </div>
         <div class="doc-item--components" v-if="component.components">
-            <h5>Components used</h5>
+            <h5>Components used by this component</h5>
             <ul>
                 <li v-for="component in getComponents">
                     {{component}}
@@ -40,7 +46,7 @@
 </template>
 
 <script>
-  import * as Utils from '../../Utils/UpperCaseFirst'
+  import * as Utils from '../../Utils'
 
   export default {
     name: 'doc-item',
@@ -79,6 +85,7 @@
             default: this.getDefaultValue(prop.default),
             type: this.getPropType(prop.type),
             note: prop.note,
+            required: prop.required,
             key: key
           }
           // console.log(obj)
@@ -106,6 +113,10 @@
         &--filename {
             font-size: 0.7em;
         }
+        .underline {
+            text-decoration: underline;
+        }
+
         &--introduction {
         }
         &--description {

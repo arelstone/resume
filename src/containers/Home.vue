@@ -9,30 +9,21 @@
                  :country="resume.basics.location.region"/>
 
         <profile :text="resume.basics.summary"/>
-        <work :work="resume.work"/>
         <skills :skills="resume.skills"/>
+        <profiles :profiles="resume.basics.profiles"/>
+        <work :work="resume.work"/>
         <interests :interests="resume.interests"/>
         <languages :languages="resume.languages"/>
     </div>
 </template>
 
 <script>
-  import Contact from '../components/Contact.vue'
-  import Profile from '../components/Profile'
-  import Work from '../components/Work'
-  import Skills from '../components/Skills'
-  import Interests from '../components/Interests'
-  import Languages from '../components/Languages'
+  import * as Components from '../components'
 
   export default {
     name: 'Home',
     components: {
-      Profile,
-      Contact,
-      Work,
-      Skills,
-      Interests,
-      Languages
+      ...Components
     },
     computed: {
       language () {

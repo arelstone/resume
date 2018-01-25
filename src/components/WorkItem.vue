@@ -17,8 +17,7 @@
 
 <script>
   export default {
-    name: 'WorkItem',
-
+    name: 'work-item',
     introduction: '',
     description: '',
     token: '<work-item :work="{position: "" website: "" startDate="" endDate="" :highlights=[]} />',

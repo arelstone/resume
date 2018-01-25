@@ -1,6 +1,6 @@
 <template>
     <section>
-        <h1>Documentation</h1>
+        <headline text="Documentation"></headline>
         <doc-item :component="Contact"/>
         <doc-item :component="Languages"/>
         <doc-item :component="Headline"/>
@@ -30,11 +30,11 @@
         WorkItem
       }
     },
-    mounted () {
-      document.querySelectorAll('pre code').forEach(block => hljs.highlightBlock(block))
-    },
     components: {
-      DocItem
+      DocItem, Headline
+    },
+    mounted () {
+      hljs.initHighlightingOnLoad()
     }
   }
 </script>

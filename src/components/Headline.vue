@@ -9,11 +9,11 @@
   import * as Utils from '../Utils'
 
   export default {
-    name: 'Headline',
+    name: 'headline',
     description: 'A component to display a uniform headline. The text-prop fill be rendered with <, />-tags',
     token: '<headline text="Hello world" />',
     props: {
-      text: {type: String, required: true, note: 'This prop will utilize the Utils.ucFirst-function'}
+      text: {type: String, required: true, default: '', note: 'This prop will utilize the Utils.ucFirst-function'}
     },
     computed: {
       cText () {

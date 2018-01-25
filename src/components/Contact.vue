@@ -18,7 +18,7 @@
   import Headline from './Headline.vue'
 
   export default {
-    name: 'Contact',
+    name: 'contact',
     components: {Headline},
     token: '<contact name="John Doe" phone="10101010" email="hello@email.com" address="Some address" zip="90210" country="Denmark" />',
     props: {
