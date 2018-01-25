@@ -23,15 +23,13 @@
 <script>
   import sortOn from 'sort-on'
   import { ucFirst } from '../Utils'
-  import SmallHeadline from './SmallHeadline.vue'
   import Headline from './Headline.vue'
-  import SkillItem from './SkillItem.vue'
 
   export default {
     name: 'Skills',
     introduction: 'skills',
     description: 'A component for displaying skill-items',
-    token: '<skills :skills="[]">',
+    token: '<skills :skills="[{name: "Some skill", level: 2, type: "language|framework|other", icon: "path/to/icon.png"}]">',
     data () {
       return {
         sortOrder: ['language', 'framework', 'other']
@@ -46,9 +44,7 @@
       }
     },
     components: {
-      SkillItem,
-      Headline,
-      SmallHeadline
+      Headline
     },
     methods: {
       skillTitle (skill) {

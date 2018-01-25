@@ -16,11 +16,11 @@
   "dependencies": {
     "bootstrap-4-grid": "^2.2.0",
     "font-awesome": "^4.7.0",
+    "highlight.js": "^9.12.0",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
     "sort-on": "^2.0.0",
     "vue": "^2.5.2",
-    "vue-d3": "^0.1.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

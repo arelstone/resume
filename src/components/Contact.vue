@@ -20,14 +20,15 @@
   export default {
     name: 'Contact',
     components: {Headline},
+    token: '<contact name="John Doe" phone="10101010" email="hello@email.com" address="Some address" zip="90210" country="Denmark" />',
     props: {
-      name: {type: String, required: true},
-      phone: {type: String, required: true},
-      email: {type: String, required: true},
-      address: {type: String, required: true},
-      zip: {type: String | Number, required: true},
-      city: {type: String, required: true},
-      country: {type: String, required: true}
+      name: {type: String, required: true, note: 'The name to display'},
+      phone: {type: String, required: true, note: 'The phone number to display'},
+      email: {type: String, required: true, note: 'The e-mail to display'},
+      address: {type: String, required: true, note: 'The address to display'},
+      zip: {type: String | Number, required: true, note: 'The zip code to display'},
+      city: {type: String, required: true, note: 'The city to display'},
+      country: {type: String, required: true, note: 'The country to display'}
     }
   }
 </script>

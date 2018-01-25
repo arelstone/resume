@@ -15,9 +15,9 @@
     name: 'languages',
     introduction: 'A section for displaying spoken languages',
     description: '',
-    token: '<languages />',
+    token: '<languages :languages="[{name: "", level: ""}]" />',
     props: {
-      languages: {type: Object | Array, required: true, default: {}}
+      languages: {type: Array, required: true, default: {}, note: 'A collection of languages'}
     },
     components: {Headline}
   }

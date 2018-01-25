@@ -4,7 +4,12 @@
             <headline text="Erfarring"/>
         </div>
         <div class="col-12">
-            <work-item v-for="item, index in work" :work="item" :key="index"/>
+            <work-item v-for="item, index in work"
+                       :key="index"
+                       :position="item.position"
+                       :company="item.company"
+                       :website="item.website"
+                       :highlights="item.highlights" />
         </div>
     </div>
 </template>
@@ -15,8 +20,11 @@
 
   export default {
     name: 'Work',
+    introduction: '',
+    description: '',
+    token: '<work :work="[{}]" />',
     props: {
-      work: {type: Object | Array, required: true}
+      work: {type: Array, required: true, note: 'A collection of work-items'}
     },
     components: {Headline, WorkItem}
   }
