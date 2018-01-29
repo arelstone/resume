@@ -11,8 +11,12 @@
                         <img :src="`static/img/${skill.icon}`">
                     </div>
                     <ul>
-                        <li v-for="x in skill.level" :title="skillTitle(skill)"><i
-                                :class="['fa fa-circle', 'skill--'+x]"></i></li>
+                        <li v-for="x in skill.level" :title="skillTitle(skill)">
+                            <svg height="20" width="20">
+                                <circle cx="10" cy="10" r="8" :class="`skill--${x}`"/>
+                            </svg>
+                            <!--<i :class="['fa fa-circle', 'skill--'+x]"></i>-->
+                        </li>
                     </ul>
                 </div>
 
@@ -69,7 +73,7 @@
     $class-slug: skill-- !default;
 
     @mixin skillColor($x) {
-        color: darken($skill-color, $x*2);
+        fill: darken($skill-color, ($x*3)/9);
     }
 
     #Skills {
@@ -103,15 +107,15 @@
                     line-height: 12px;
                     align-content: end;
                     li {
-                        text-align: center;
-                        margin: 5px 0;
-                        i.fa {
-                            @for $i from 1 through 10 {
-                                &.#{$class-slug}#{$i} {
-                                    @include skillColor($i);
-                                }
+
+                        @for $i from 1 through 10 {
+                            .#{$class-slug}#{$i} {
+                                @include skillColor($i);
                             }
                         }
+                        text-align: center;
+                        margin: 5px 0;
+
                     }
                 }
             }
