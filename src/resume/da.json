@@ -38,7 +38,8 @@
       "endDate": "Nu",
       "summary": "Description...",
       "highlights": [
-        "Udvikling af GDPR løsning"
+        "Udvikling af GDPR løsning",
+        "Code review"
       ]
     },
     {
@@ -70,8 +71,8 @@
       "company": "Eoptimo",
       "position": "Software Udvikliner",
       "website": "http://eoptimo.dk",
-      "startDate": "",
-      "endDate": "",
+      "startDate": "2014",
+      "endDate": "2016",
       "summary": "",
       "highlights": [
         "Udvikling af en beregningsplatform til opgørelse af energibesparelser",

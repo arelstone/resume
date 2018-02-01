@@ -7,11 +7,10 @@
                  :city="resume.basics.location.city"
                  :zip="resume.basics.location.postalCode"
                  :country="resume.basics.location.region"/>
-
         <profile :text="resume.basics.summary"/>
+        <work :work="resume.work"/>
         <skills :skills="resume.skills"/>
         <profiles :profiles="resume.basics.profiles"/>
-        <work :work="resume.work"/>
         <interests :interests="resume.interests"/>
         <languages :languages="resume.languages"/>
     </div>

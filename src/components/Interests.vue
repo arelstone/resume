@@ -1,6 +1,6 @@
 <template>
     <div id="interests">
-        <headline text="Interesser"></headline>
+        <headline text="Interesser"icon="../../static/img/headline/lamp-svgrepo-com.svg" />
         <div>{{interests}}</div>
     </div>
 </template>
@@ -21,5 +21,10 @@
 </script>
 
 <style scoped lang="scss">
+    @import '../assets/style/style';
 
+    #interests {
+        @include FontLight;
+        @include Lato;
+    }
 </style>

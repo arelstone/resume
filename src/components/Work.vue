@@ -1,7 +1,7 @@
 <template>
     <div class="row" id="work">
         <div class="col-12">
-            <headline text="Erfarring"/>
+            <headline text="Erfarring" icon="../../static/img/headline/files-svgrepo-com.svg"/>
         </div>
         <div class="col-12">
             <work-item v-for="item, index in work"
@@ -9,7 +9,9 @@
                        :position="item.position"
                        :company="item.company"
                        :website="item.website"
-                       :highlights="item.highlights" />
+                       :highlights="item.highlights"
+                       :start-date="item.startDate"
+                       :end-date="item.endDate"/>
         </div>
     </div>
 </template>
@@ -31,7 +33,7 @@
 </script>
 
 <style scoped lang="scss">
-    @import "../assets/style/fonts";
+    @import '../assets/style/style';
 
     #work {
         @include FontThin;

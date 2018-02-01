@@ -1,0 +1,8 @@
+@mixin border($color) {
+  border: 1px solid $color;
+}
+
+.border {
+  @include border(red)
+}
+

@@ -20,6 +20,7 @@
         background: $bg-color;
         color: $text-color;
         @include Lato;
+        font-size: 1.2em;
     }
 
     h1 {
