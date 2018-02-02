@@ -1,8 +1,5 @@
 <template>
     <div class="row" id="Contact">
-        <div class="col-12">
-            <headline text="Curriculum vitae"/>
-        </div>
         <div class="col-md-4">
             <h2 id="email">{{email}}</h2>
             <h2 id="phone">{{phone}}</h2>
@@ -15,12 +12,9 @@
 </template>
 
 <script>
-  import Headline from './Headline.vue'
-
   export default {
     name: 'contact',
-    components: {Headline},
-    token: '<contact name="John Doe" phone="10101010" email="hello@email.com" address="Some address" zip="90210" country="Denmark" />',
+    token: '<contact name="John Doe" phone="10101010" />',
     props: {
       name: {type: String, required: true, note: 'The name to display'},
       phone: {type: String, required: true, note: 'The phone number to display'},
@@ -33,8 +27,7 @@
   }
 </script>
 <style scoped lang="scss">
-    @import "../assets/style/fonts";
-    @import "../assets/style/variables";
+    @import '../assets/style/style';
 
     @mixin mb {
         margin: 3px;
@@ -42,7 +35,6 @@
 
     #Contact {
         padding-bottom: 10px;
-
 
         #email {
             @include Oswald;
@@ -67,11 +59,12 @@
         #name {
             line-height: 0.81em;
             font-size: 3.5em;
-            letter-spacing: 0.6em;
+            //letter-spacing: 0.6em;
             padding: 0;
+            margin-top: 10px;
             text-transform: uppercase;
             @include mb;
-            @include OpenSansCondensed;
+            //@include OpenSansCondensed;
         }
 
         #headline {

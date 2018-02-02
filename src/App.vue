@@ -12,7 +12,6 @@
 
 <style lang="scss">
     @import "~bootstrap-4-grid";
-    @import "../node_modules/font-awesome/css/font-awesome.min.css";
     @import "./assets/style/variables";
     @import "./assets/style/fonts";
 
