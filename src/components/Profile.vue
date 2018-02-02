@@ -1,7 +1,7 @@
 <template>
     <div class="row" id="Profile">
         <div class="col-12">
-            <headline icon="../../static/img/headline/book-svgrepo-com.svg" text="Profil"></headline>
+            <headline text="Profil"></headline>
         </div>
         <div class="col-12 content" v-html="cText"></div>
     </div>
@@ -26,11 +26,12 @@
 </script>
 
 <style scoped lang="scss">
-    @import '../assets/style/style';
+    @import '../assets/style/fonts';
 
     #Profile {
         .content {
-            @include FontLight;
+            font-size: 1em;
+            @include FontThin;
             @include Lato;
         }
     }

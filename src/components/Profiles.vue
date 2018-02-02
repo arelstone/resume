@@ -1,13 +1,17 @@
 <template>
     <div class="row" id="Profiles">
         <div class="col-12">
-            <headline text="Profils" icon="../../static/img/headline/mug-svgrepo-com.svg"></headline>
+            <headline text="Profils"></headline>
         </div>
-        <div v-for="profile in profiles" class="col-xs-2 col-sm-4 item">
-            <a :href="profile.url" target="_blank" :title="profile.network">
-                <img :src="`static/img/${profile.icon}`" :alt="profile.network">
-                {{profile.username}}
-            </a>
+        <div class="col-12">
+            <ul>
+                <li v-for="profile in profiles">
+                    <a :href="profile.url" target="_blank" :title="profile.network">
+                        <img :src="`static/img/${profile.icon}`" :alt="profile.network">
+                        {{profile.username}}
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </template>
@@ -25,7 +29,8 @@
 </script>
 
 <style scoped lang="scss">
-    @import '../assets/style/style';
+    @import '../assets/style/fonts';
+    @import '../assets/style/variables';
 
     #Profiles {
         a {
@@ -35,16 +40,17 @@
                 color: darken($primary-color, 20)
             }
         }
-        .item {
-            padding: 10px;
-
-            img {
-                margin-right:10px;
-                margin-bottom: -3px;
-                width: 20px;
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                margin: 20px;
+                img {
+                    margin-bottom: -5px;
+                    width: 20px;
+                }
             }
         }
     }
-
 
 </style>

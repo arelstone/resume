@@ -1,7 +1,7 @@
 <template>
     <div class="Headline">
-        <h2>
-            <img :src="icon" alt="">{{cText}} /&gt;</h2>
+        <h2>&lt;{{cText}} /&gt;
+        </h2>
     </div>
 </template>
 
@@ -13,8 +13,7 @@
     description: 'A component to display a uniform headline. The text-prop fill be rendered with <, />-tags',
     token: '<headline text="Hello world" />',
     props: {
-      text: {type: String, required: true, default: '', note: 'This prop will utilize the Utils.ucFirst-function'},
-      icon: {type: String}
+      text: {type: String, required: true, default: '', note: 'This prop will utilize the Utils.ucFirst-function'}
     },
     computed: {
       cText () {
@@ -25,7 +24,8 @@
 </script>
 
 <style scoped lang="scss">
-    @import '../assets/style/style';
+    @import '../assets/style/variables';
+    @import '../assets/style/fonts';
 
     .Headline {
         @include BioRhyme;
@@ -33,11 +33,6 @@
             @include FontThin;
             color: $headline-color;
             border-bottom: 1px solid $border-color;
-            font-size: 3rem;
-            img {
-                width: 2.4rem;
-                margin-right: 0.5em;
-            }
         }
     }
 </style>

@@ -1,7 +1,7 @@
 <template>
-    <div id="languages" class="row">
-        <headline text="Sprog" class="col-12" icon="../../static/img/headline/compass-svgrepo-com.svg" ></headline>
-        <div v-for="language in languages" class="col-xs-6 col-sm-4 item">
+    <div id="interests">
+        <headline text="Sprog"></headline>
+        <div v-for="language in languages">
             {{language.name}}
             <small>- {{language.level}}</small>
         </div>
@@ -24,14 +24,5 @@
 </script>
 
 <style scoped lang="scss">
-    @import '../assets/style/style';
 
-    #languages {
-        @include FontLight;
-        @include Lato;
-        .item {
-            padding: 10px;
-        }
-
-    }
 </style>

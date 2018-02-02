@@ -1,11 +1,25 @@
 <template>
     <div class="row" id="Skills">
         <div class="col-12">
-            <headline text="Skills" icon="../../static/img/headline/pencil-svgrepo-com.svg"/>
+            <headline text="Skills"/>
         </div>
-        <div class="skill-items">
-            <div v-for="skill in sorted" class="item">
-                <skill-item :skill="skill"/>
+        <div class="col-12">
+            <div v-for="skills, key in sorted" class="skill-items">
+                <div v-for="skill in skills" class="item">
+                    <div class="skill--name" :title="skill.type">
+                        {{skill.name}}
+                        <img :src="`static/img/${skill.icon}`">
+                    </div>
+                    <ul>
+                        <li v-for="x in skill.level" :title="skillTitle(skill)">
+                            <svg height="20" width="20">
+                                <circle cx="10" cy="10" r="8" :class="`skill--${x}`"/>
+                            </svg>
+                            <!--<i :class="['fa fa-circle', 'skill--'+x]"></i>-->
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </div>
@@ -13,8 +27,8 @@
 
 <script>
   import sortOn from 'sort-on'
+  import { ucFirst } from '../Utils'
   import Headline from './Headline.vue'
-  import SkillItem from './SkillItem'
 
   export default {
     name: 'skills',
@@ -34,25 +48,26 @@
       }
     },
     components: {
-      SkillItem,
       Headline
     },
-    mounted () {
+    methods: {
+      skillTitle (skill) {
+        return `${skill.level} ${skill.name}  - ${ucFirst(skill.type)}`
+      }
     },
     computed: {
       sortedByLevel () {
         return sortOn(this.skills, 'level').reverse()
       },
       sorted () {
-        const firstSort = this.sortOrder.map(type => this.sortedByLevel.filter(f => f.type === type))
-        return [].concat(...firstSort)
+        return this.sortOrder.map(type => this.sortedByLevel.filter(f => f.type === type))
       }
     }
   }
 </script>
 
 <style scoped lang="scss">
-    @import '../assets/style/style';
+    @import '../assets/style/fonts';
 
     $skill-color: #088bbf;
     $class-slug: skill-- !default;
@@ -62,28 +77,47 @@
     }
 
     #Skills {
+        margin-bottom: 30px;
         .skill-items {
-            margin: 0 15px;
-            overflow-x: scroll;
-            white-space: nowrap;
-
-            &::-webkit-scrollbar {
-                //width: 0.2em;
-                height: 0.4em;
-                &-track {
-                    -webkit-box-shadow: inset 0 0 0 transparent;
-                }
-                &-thumb {
-                    background-color: slategrey;
-                    outline: 1px solid slategrey;
-                    border-radius: 5px;
-                }
-            }
-
             .item {
-                display: inline-flex;
-                width: 2.8em;
-                padding-left: 6px;
+                padding-top: 40px;
+                height: 400px;
+                float: left;
+                display: inline-block;
+                max-width: 40px;
+                .skill--name {
+                    width: 150px;
+                    transform: rotate(90deg);
+                    margin-bottom: 80px;
+                    margin-left: -60px;
+                    text-align: right;
+                    @include FontThin;
+                    img {
+                        margin-bottom: -5px;
+                        transform: rotate(-90deg);
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    width: 30px;
+                    text-align: center;
+                    line-height: 12px;
+                    align-content: end;
+                    li {
+
+                        @for $i from 1 through 10 {
+                            .#{$class-slug}#{$i} {
+                                @include skillColor($i);
+                            }
+                        }
+                        text-align: center;
+                        margin: 5px 0;
+
+                    }
+                }
             }
         }
     }
