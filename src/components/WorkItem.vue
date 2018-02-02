@@ -33,14 +33,14 @@
 </script>
 
 <style scoped lang="scss">
-    @import "../assets/style/fonts";
-    @import "../assets/style/variables";
+    @import '../assets/style/style';
 
     .work-item {
-        padding-bottom: 20px;
+        margin-bottom: 50px;
         h4 {
             margin: 0;
             @include FontLight;
+            font-size:2em;
 
         }
         h5 {
@@ -56,14 +56,14 @@
             @include FontLight;
         }
         li {
-            margin-top: 5px;
+            margin-bottom: 10px;
         }
         .work-item--right {
             ul {
                 margin: 5px 0;
                 padding-left: 20px;
             }
-            @include FontThin;
+            @include FontLight;
             @include Lato;
 
         }

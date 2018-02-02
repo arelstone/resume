@@ -1,28 +1,30 @@
 <template>
     <div class="row" id="Profiles">
         <div class="col-12">
-            <headline text="Profils"></headline>
+            <headline text="Profiler" :icon="Icon"/>
         </div>
-        <div class="col-12">
-            <ul>
-                <li v-for="profile in profiles">
-                    <a :href="profile.url" target="_blank" :title="profile.network">
-                        <img :src="`static/img/${profile.icon}`" :alt="profile.network">
-                        {{profile.username}}
-                    </a>
-                </li>
-            </ul>
+        <div v-for="profile in profiles" class="col-xs-2 col-sm-4 item">
+            <a :href="profile.url" target="_blank" :title="profile.network">
+                <img :src="`static/img/${profile.icon}`" :alt="profile.network">
+                {{profile.username}}
+            </a>
         </div>
     </div>
 </template>
 
 <script>
   import Headline from './Headline.vue'
+  import Icon from '../assets/img/mug-svgrepo-com.svg'
 
   export default {
     name: 'profiles',
     props: {
       profiles: {type: Array, required: true, note: 'An array of profiles'}
+    },
+    data () {
+      return {
+        Icon
+      }
     },
     components: {Headline}
   }
@@ -40,9 +42,7 @@
                 color: darken($primary-color, 20)
             }
         }
-        ul {
-            list-style: none;
-            li {
+            .item {
                 display: inline-block;
                 margin: 20px;
                 img {
@@ -50,7 +50,6 @@
                     width: 20px;
                 }
             }
-        }
     }
 
 </style>
