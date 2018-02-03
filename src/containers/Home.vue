@@ -30,7 +30,7 @@
         return (navigator.language) ? navigator.language : navigator.userLanguage
       },
       resume () {
-        return require(`../resume/${this.language}.json`)
+        return require(`../resume/da.json`)
       }
     },
     data () {

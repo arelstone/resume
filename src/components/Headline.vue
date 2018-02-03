@@ -34,7 +34,7 @@
             @include FontThin;
             color: $headline-color;
             border-bottom: 1px solid $border-color;
-            font-size: 3rem;
+            font-size: 2.7rem;
             img {
                 width: 2.4rem;
                 margin-right: 0.5em;
