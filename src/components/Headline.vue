@@ -10,11 +10,12 @@
 
   export default {
     name: 'headline',
+    introduction: 'Headline component',
     description: 'A component to display a uniform headline. The text-prop fill be rendered with <, />-tags',
     token: '<headline text="Hello world" />',
     props: {
       text: {type: String, required: true, default: '', note: 'This prop will utilize the Utils.ucFirst-function'},
-      icon: {type: String}
+      icon: {type: String, note: 'A image to be shown to the left of the text'}
     },
     computed: {
       cText () {

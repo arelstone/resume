@@ -1,11 +1,12 @@
 <template>
     <div id="interests">
         <headline text="Interesser" :icon="Icon"/>
-        <div>{{interests}}</div>
+        <div class="content">{{Utils.ucFirst(interests)}}</div>
     </div>
 </template>
 
 <script>
+  import * as Utils from '../Utils'
   import Headline from './Headline'
   import Icon from '../assets/img/lamp-svgrepo-com.svg'
 
@@ -15,7 +16,7 @@
     description: '',
     token: '',
     data () {
-      return {Icon}
+      return {Icon, Utils}
     },
     props: {
       interests: {type: String, requried: true, default: ''}
