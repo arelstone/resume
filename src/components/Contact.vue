@@ -14,13 +14,15 @@
 <script>
   export default {
     name: 'contact',
+    introduction: 'Contact information',
+    description: 'A component for displaying contact information',
     token: '<contact name="John Doe" phone="10101010" />',
     props: {
       name: {type: String, required: true, note: 'The name to display'},
       phone: {type: String, required: true, note: 'The phone number to display'},
       email: {type: String, required: true, note: 'The e-mail to display'},
       address: {type: String, required: true, note: 'The address to display'},
-      zip: {type: String | Number, required: true, note: 'The zip code to display'},
+      zip: {type: String, required: true, note: 'The zip code to display'},
       city: {type: String, required: true, note: 'The city to display'},
       country: {type: String, required: true, note: 'The country to display'}
     }

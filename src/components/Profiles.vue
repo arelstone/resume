@@ -18,6 +18,9 @@
 
   export default {
     name: 'profiles',
+    introduction: 'Social Profiles',
+    description: 'A component for displaying social profiles',
+    token: '<profiles :profiles="[{}]"/>',
     props: {
       profiles: {type: Array, required: true, note: 'An array of profiles'}
     },

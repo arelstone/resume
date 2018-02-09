@@ -18,8 +18,8 @@
 <script>
   export default {
     name: 'work-item',
-    introduction: '',
-    description: '',
+    introduction: 'Work item',
+    description: 'A component for displaying a single work-item',
     token: '<work-item :work="{position: "" website: "" startDate="" endDate="" :highlights=[]} />',
     props: {
       position: {type: String, required: true, note: 'The position I worked as'},

@@ -19,6 +19,7 @@
 
   export default {
     name: 'skills',
+    introduction: 'Skills',
     description: 'A component for displaying skill-items. The skills prop will be sorted by type and filtered by level',
     token: '<skills :skills="[{name: "Some skill", level: 2, type: "language|framework|other", icon: "path/to/icon.png"}]">',
     data () {
@@ -29,7 +30,7 @@
     },
     props: {
       skills: {
-        type: Object | Array,
+        type: Array,
         required: true,
         default: {},
         note: 'A collection of skills.'

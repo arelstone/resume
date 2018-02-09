@@ -50,9 +50,9 @@
 
   export default {
     name: 'doc-item',
-    introduction: '',
-    description: '',
-    token: '',
+    introduction: 'Component for displaying documentation',
+    description: 'This component will display documentation for a compoennt',
+    token: '<doc-item :component="SomeComponent" />',
     data () {
       return {
         Utils

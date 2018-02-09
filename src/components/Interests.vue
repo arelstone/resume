@@ -12,14 +12,14 @@
 
   export default {
     name: 'interests',
-    introduction: '',
-    description: '',
-    token: '',
+    introduction: 'A section for displaying spoken interests',
+    description: 'A component for displaying spoken interests',
+    token: '<interests :interests="[{}]"/>',
     data () {
       return {Icon, Utils}
     },
     props: {
-      interests: {type: String, requried: true, default: ''}
+      interests: {type: String, requried: true, default: '', note: 'A string of text'}
     },
     components: {Headline}
   }

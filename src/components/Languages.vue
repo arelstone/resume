@@ -15,7 +15,7 @@
   export default {
     name: 'languages',
     introduction: 'A section for displaying spoken languages',
-    description: '',
+    description: 'A component for displaying spoken languages',
     token: '<languages :languages="[{name: "", level: ""}]" />',
     props: {
       languages: {type: Array, required: true, default: {}, note: 'A collection of languages'}

@@ -23,8 +23,8 @@
 
   export default {
     name: 'work',
-    introduction: '',
-    description: '',
+    introduction: 'Work component',
+    description: 'A component for displaying a collection of work-items',
     token: '<work :work="[{}]" />',
     props: {
       work: {type: Array, required: true, note: 'A collection of work-items'}

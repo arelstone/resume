@@ -18,11 +18,11 @@
 
   export default {
     name: 'skill-item',
-    introduction: '',
-    description: '',
-    token: '',
+    introduction: 'SkillItem.vue',
+    description: 'A skill-item that renders the amount of level as circles',
+    token: '<skill-item>',
     props: {
-      skill: {type: Object, required: true}
+      skill: {type: Object, required: true, note: 'Skill collection'}
     },
     components: {SkillCircle},
     methods: {

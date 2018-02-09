@@ -14,8 +14,11 @@
 
   export default {
     name: 'profile',
+    introduction: 'Profile',
+    description: 'A component for displaying a profile text',
+    token: '<profile :text="Some long text string here"/>',
     props: {
-      text: {type: String, required: true}
+      text: {type: String, required: true, note: 'Some text to display'}
     },
     components: {Headline},
     data () {
