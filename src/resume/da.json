@@ -38,7 +38,8 @@
       "endDate": "Nu",
       "summary": "Description...",
       "highlights": [
-        "Udvikling af GDPR løsning",
+        "Ny udvikling af features i ny arkitektur",
+        "Bug fixing i gammel arkitektur",
         "Code review"
       ]
     },
@@ -236,7 +237,7 @@
       "level": "Flydende"
     }
   ],
-  "interests": "I min fritid dyrker jeg judo. Jeg har det gule bælte.",
+  "interests": "De seneste år er min fritid gået med at renovere vores rækkehus, i Søborg, som mine kæreste og Jeg købte i 2014. Ud over dette bruger jeg min tid på familie, at gå ture med vores hund samt kamp sporten judo.",
   "references": [
     {
       "name": "Jane Doe",

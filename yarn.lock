@@ -1307,6 +1307,12 @@ center-align@^0.1.1:
     align-text "^0.1.3"
     lazy-cache "^1.0.3"
 
+chai-asserttype@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/chai-asserttype/-/chai-asserttype-1.0.5.tgz#b0097db2ea66eb219894d1463c39818a319190dc"
+  dependencies:
+    check-types "^7.0.1"
+
 chai-nightwatch@~0.1.x:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/chai-nightwatch/-/chai-nightwatch-0.1.1.tgz#1ca56de768d3c0868fe7fc2f4d32c2fe894e6be9"
@@ -1346,6 +1352,10 @@ chalk@^2.0.1, chalk@^2.3.0:
 check-error@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/check-error/-/check-error-1.0.2.tgz#574d312edd88bb5dd8912e9286dd6c0aed4aac82"
+
+check-types@^7.0.1:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/check-types/-/check-types-7.3.0.tgz#468f571a4435c24248f5fd0cb0e8d87c3c341e7d"
 
 chokidar@^1.4.1, chokidar@^1.7.0:
   version "1.7.0"

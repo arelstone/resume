@@ -12,25 +12,13 @@
 
 <style lang="scss">
     @import "~bootstrap-4-grid";
-    @import "./assets/style/variables";
-    @import "./assets/style/fonts";
+    @import "./assets/style/style";
 
     body {
+        padding: 50px 0;
         background: $bg-color;
         color: $text-color;
         @include Lato;
-    }
-
-    h1 {
-        //font-family: 'Open Sans', sans-serif;
-    }
-
-    h2 {
-        //font-family: 'Open Sans Condensed', sans-serif;
-    }
-
-    h5 {
-        //font-family: 'Open Sans Condensed', sans-serif;
     }
 
     .hidden {

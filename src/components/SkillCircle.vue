@@ -7,23 +7,25 @@
 </template>
 
 <script>
+  import * as Utils from '../Utils'
+
   export default {
     name: 'skill-circle',
-    introduction: '',
-    description: '',
-    token: '',
+    introduction: 'A circle with a calculated radius',
+    description: 'Displays a circle with a calculated radius',
+    token: '<skill-circle level="5" i="2"/>',
     props: {
-      level: {type: Number | String, required: true},
-      i: {type: Number, required: true}
+      level: {type: Number | String, required: true, note: 'The level of the skill'},
+      i: {
+        type: Number,
+        required: true,
+        note: 'The index of the loop. This is used til calculate the radius of the circle'
+      }
     },
     methods: {},
     computed: {
       size () {
-        const calc = 1 + ((this.level * this.i) + 4) / 10
-        if (calc > 10) {
-          return 10
-        }
-        return calc
+        return Utils.calculateRadius(this.level, this.i)
       }
     }
   }

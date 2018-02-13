@@ -1,8 +1,8 @@
 <template>
     <div class="row" id="Contact">
         <div class="col-md-4">
-            <h2 id="email">{{email}}</h2>
-            <h2 id="phone">{{phone}}</h2>
+            <h2 id="email"><a :href="`mailto:${email}`">{{email}}</a></h2>
+            <h2 id="phone"><a :href="`tel:${phone}`">{{phone}}</a></h2>
             <h5 id="address">{{address}} - {{zip}} {{city}}</h5>
         </div>
         <div class="col-md-8">
@@ -30,6 +30,11 @@
 </script>
 <style scoped lang="scss">
     @import '../assets/style/style';
+
+    a {
+        color: $primary-color;
+        text-decoration: none;
+    }
 
     @mixin mb {
         margin: 3px;
