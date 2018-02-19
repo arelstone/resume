@@ -191,6 +191,12 @@
       "type": "language"
     },
     {
+      "name": "Webpack",
+      "level": 5,
+      "icon": "webpack.svg",
+      "type": "other"
+    },
+    {
       "name": "SQL",
       "level": 6,
       "icon": "sql.svg",
@@ -237,7 +243,7 @@
       "level": "Flydende"
     }
   ],
-  "interests": "De seneste år er min fritid gået med at renovere vores rækkehus, i Søborg, som mine kæreste og Jeg købte i 2014. Ud over dette bruger jeg min tid på familie, at gå ture med vores hund samt kamp sporten judo.",
+  "interests": "De seneste år er meget af min fritid gået med at renovere vores rækkehus, i Søborg, som min kæreste og Jeg købte i 2014. Ud over dette bruger jeg min tid på familie, at gå ture med vores hund samt kamp sporten judo.",
   "references": [
     {
       "name": "Jane Doe",
