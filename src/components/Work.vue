@@ -1,7 +1,7 @@
 <template>
     <div class="row" id="work">
         <div class="col-12">
-            <headline text="Erfarring" :icon="Icon"/>
+            <headline :text="$t('Experience')" :icon="Icon"/>
         </div>
         <div class="col-12">
             <work-item v-for="item, index in work"

@@ -7,8 +7,9 @@ import Profiles from './Profiles'
 import Skills from './Skills'
 import SkillItem from './SkillItem'
 import SkillCircle from './SkillCircle'
+import SkewContainer from './SkewContainer'
 import Work from './Work'
 import WorkItem from './WorkItem'
 import DocItem from './docs/DocItem'
 
-export { Contact, Headline, Interests, Languages, Skills, SkillItem, SkillCircle, Profile, Profiles, Work, WorkItem, DocItem }
+export { Contact, Headline, Interests, Languages, Skills, SkillItem, SkillCircle, SkewContainer, Profile, Profiles, Work, WorkItem, DocItem }

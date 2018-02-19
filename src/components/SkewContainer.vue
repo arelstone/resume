@@ -12,12 +12,12 @@
 <script>
   export default {
     name: 'skew-container',
-    introduction: '',
-    description: '',
-    token: '',
+    introduction: 'A container for skewing the content',
+    description: 'Skrew the content ',
+    token: '<skew-container><slot></slot></skew-container>',
     props: {
-      margin: {type: String, default: '0 10vw'},
-      bgColor: {type: String, default: '#FAFDF6'}
+      margin: {type: String, default: '0 10vw', note: 'the margin'},
+      bgColor: {type: String, default: '#FAFDF6', note: 'the background color'}
     },
     computed: {
       css () {

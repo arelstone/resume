@@ -1,6 +1,6 @@
 <template>
     <div class="row" id="Contact">
-        <div class="col-md-4 hidden">
+        <div class="col-md-4">
             <h2 id="email"><a :href="`mailto:${email}`">{{email}}</a></h2>
             <h2 id="phone"><a :href="`tel:${phone}`">{{phone}}</a></h2>
             <h5 id="address">{{address}} - {{zip}} {{city}}</h5>
@@ -68,7 +68,7 @@
 
         }
         #name {
-            text-align: center;
+
             line-height: 0.81em;
             font-size: 3.5em;
             //letter-spacing: 0.6em;

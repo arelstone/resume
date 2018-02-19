@@ -1,0 +1,253 @@
+{
+  "basics": {
+    "name": "Carsten Daurehøj",
+    "label": "Programmer",
+    "picture": "/assets/profile-image.png",
+    "email": "arelstone@gmail.com",
+    "phone": "+45 61 46 15 71",
+    "website": "",
+    "summary": "My name is Casretn Daurehøj",
+    "location": {
+      "address": "Søborg Parkallé 56",
+      "postalCode": "2860",
+      "city": "Søborg",
+      "countryCode": "DK",
+      "region": "Denmark"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "@arelstone",
+        "url": "http://github.com/arelstone",
+        "icon": "github.svg"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Carsten Daurehøj",
+        "url": "https://www.linkedin.com/in/carsten-daurehøj-a987a450/",
+        "icon": "if_square-linkedin_317725.svg"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Risma Systems",
+      "position": "Senior Software developer",
+      "website": "http://rismasystems.dk",
+      "startDate": "2017",
+      "endDate": "Nu",
+      "summary": "Description...",
+      "highlights": [
+        "Implementation of a Vue frontend into new system architecture",
+        "Bugfinxing in old system architecture",
+        "Code review"
+      ]
+    },
+    {
+      "company": "IT Sharevision",
+      "position": "IT consultant",
+      "website": "http://it-sharevision.dk",
+      "startDate": "2017",
+      "endDate": "2017",
+      "summary": "Description...",
+      "highlights": [
+        "Implementation of agile workflow by using a Kanban, Morning standup's ect",
+        "Developing an Auction platform app with Laravel and React Native"
+      ]
+    },
+    {
+      "company": "Firmafon",
+      "position": "Udvikler",
+      "website": "http://firmafon.dk",
+      "startDate": "2016",
+      "endDate": "2017",
+      "summary": "",
+      "highlights": [
+        "Udvikling og opdatering af features til webportal i React",
+        "Udvikling af feature til Firmafon appen, i React Native, til at synkronisere kollegaers telefonnummer og e-mailaddresse til telefonens kontakter",
+        "Review af kollegaers kode"
+      ]
+    },
+    {
+      "company": "Eoptimo",
+      "position": "Software Udvikler",
+      "website": "http://eoptimo.dk",
+      "startDate": "2014",
+      "endDate": "2016",
+      "summary": "",
+      "highlights": [
+        "Udvikling af en beregningsplatform til opgørelse af energibesparelser",
+        "Systemarkitektur og modelering af database",
+        "Udvikling af RESTful webservices",
+        "Design og opsætning af frontend",
+        "Data visualisering",
+        "Drift, vedligeholdelse og overvågning af Webapp hos Microsoft Azure",
+        "Administation af Office 365, Active Directory & Box.com",
+        "Diverse ad hoc opgaver, bl.a. opsætning af PCer, support for kollegaer"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": 10,
+      "icon": "html5.svg",
+      "type": "language"
+    },
+    {
+      "name": "CSS",
+      "level": 10,
+      "icon": "css3.svg",
+      "type": "language"
+    },
+    {
+      "name": "Vue.js",
+      "level": 8,
+      "icon": "vuejs.svg",
+      "type": "framework"
+    },
+    {
+      "name": "Laravel",
+      "level": 7,
+      "icon": "laravel.svg",
+      "type": "framework"
+    },
+    {
+      "name": "AngularJS 1.x",
+      "level": 7,
+      "icon": "angular1x.svg",
+      "type": "framework"
+    },
+    {
+      "name": "D3.js",
+      "level": 4,
+      "icon": "d3js.svg",
+      "type": "framework"
+    },
+    {
+      "name": "AmCharts.js",
+      "level": 6,
+      "icon": "amcharts_light_transparent.png",
+      "type": "framework"
+    },
+    {
+      "name": "JavaScript",
+      "level": 8,
+      "icon": "javascript.svg",
+      "type": "Language"
+    },
+    {
+      "name": "yarn",
+      "level": 8,
+      "icon": "yarn.svg",
+      "type": "other"
+    },
+    {
+      "name": "Windows Azure",
+      "level": 4,
+      "icon": "azure.svg",
+      "type": "other"
+    },
+    {
+      "name": "React",
+      "level": 7,
+      "icon": "react.svg",
+      "type": "framework"
+    },
+    {
+      "name": "React Native",
+      "level": 7,
+      "icon": "react.svg",
+      "type": "framework"
+    },
+    {
+      "name": "Grunt",
+      "level": 6,
+      "icon": "grunt.svg",
+      "type": "other"
+    },
+    {
+      "name": "Gulp",
+      "level": 5,
+      "icon": "gulp.svg",
+      "type": "other"
+    },
+    {
+      "name": "Git",
+      "level": 9,
+      "icon": "git.svg",
+      "type": "other"
+    },
+    {
+      "name": "Bash",
+      "level": 3,
+      "icon": "bash.svg",
+      "type": "language"
+    },
+    {
+      "name": "PHP",
+      "level": 7,
+      "icon": "php.svg",
+      "type": "language"
+    },
+    {
+      "name": "Webpack",
+      "level": 5,
+      "icon": "webpack.svg",
+      "type": "other"
+    },
+    {
+      "name": "SQL",
+      "level": 6,
+      "icon": "sql.svg",
+      "type": "language"
+    },
+    {
+      "name": "jQuery",
+      "level": 8,
+      "icon": "jquery.svg",
+      "type": "framework"
+    },
+    {
+      "name": "JavaScript",
+      "level": 9,
+      "icon": "javascript.svg",
+      "type": "language"
+    },
+    {
+      "name": "Illustrator",
+      "level": 6,
+      "icon": "adobe-illustrator-cc.svg",
+      "type": "other"
+    },
+    {
+      "name": "Photoshop",
+      "level": 5,
+      "icon": "photoshop-cc.svg",
+      "type": "other"
+    },
+    {
+      "name": "InDesign",
+      "level": 4,
+      "icon": "indesign-cc.svg",
+      "type": "other"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Danish",
+      "level": "Modersmål"
+    },
+    {
+      "name": "English",
+      "level": "Flydende"
+    }
+  ],
+  "interests": "De seneste år er meget af min fritid gået med at renovere vores rækkehus, i Søborg, som min kæreste og Jeg købte i 2014. Ud over dette bruger jeg min tid på familie, at gå ture med vores hund samt kamp sporten judo.",
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference..."
+    }
+  ]
+}

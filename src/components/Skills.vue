@@ -1,7 +1,7 @@
 <template>
     <div class="row" id="Skills">
         <div class="col-12">
-            <headline text="Skills" :icon="Icon"/>
+            <headline :text="$t('Skills')" :icon="Icon"/>
         </div>
         <div class="skill-items">
             <div v-for="skill in sorted" class="item">

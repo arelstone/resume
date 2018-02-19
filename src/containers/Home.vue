@@ -34,26 +34,19 @@
 
 <script>
   import * as Components from '../components'
-  import SkewContainer from '../components/SkewContainer'
 
   export default {
     name: 'Home',
     components: {
-      ...Components,
-      SkewContainer
+      ...Components
     },
     computed: {
-      language () {
-        return (navigator.language) ? navigator.language : navigator.userLanguage
-      },
       resume () {
-        return require(`../resume/da.json`)
-      }
-    },
-    data () {
-      return {
-        // resume: require(`../resume/${this.language}.json`),
-        msg: 'Welcome to Your Vue.js App'
+        if (location.hash.split('?lang=')[1] === 'en') {
+          return require(`../resume/en.json`)
+        } else {
+          return require(`../resume/da.json`)
+        }
       }
     }
   }

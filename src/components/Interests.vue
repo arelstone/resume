@@ -1,6 +1,6 @@
 <template>
     <div id="interests">
-        <headline text="Interesser" :icon="Icon"/>
+        <headline :text="$t('Interests')" :icon="Icon"/>
         <div class="content">{{Utils.ucFirst(interests)}}</div>
     </div>
 </template>

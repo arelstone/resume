@@ -1,7 +1,7 @@
 <template>
     <div class="row" id="Profile">
         <div class="col-12">
-            <headline :icon="Icon" text="Profil"></headline>
+            <headline :icon="Icon" :text="$t('Profile')"></headline>
         </div>
         <div class="col-12 content" v-html="cText"></div>
     </div>
