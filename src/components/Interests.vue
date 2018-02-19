@@ -19,7 +19,7 @@
       return {Icon, Utils}
     },
     props: {
-      interests: {type: String, requried: true, default: '', note: 'A string of text'}
+      interests: {type: String, required: true, default: '', note: 'A string of text'}
     },
     components: {Headline}
   }
@@ -31,5 +31,6 @@
     #interests {
         @include FontLight;
         @include Lato;
+        padding: 20px 0 75px;
     }
 </style>

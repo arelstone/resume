@@ -35,6 +35,8 @@
     #languages {
         @include FontLight;
         @include Lato;
+        padding: 20px 0 75px;
+
         .item {
             padding: 10px;
         }

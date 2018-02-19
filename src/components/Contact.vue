@@ -1,12 +1,12 @@
 <template>
     <div class="row" id="Contact">
-        <div class="col-md-4">
+        <div class="col-md-4 hidden">
             <h2 id="email"><a :href="`mailto:${email}`">{{email}}</a></h2>
             <h2 id="phone"><a :href="`tel:${phone}`">{{phone}}</a></h2>
             <h5 id="address">{{address}} - {{zip}} {{city}}</h5>
         </div>
-        <div class="col-md-8">
-            <h1 id="name" class="col-12">{{name}}</h1>
+        <div class="col-md-12">
+            <h1 id="name">{{name}}</h1>
         </div>
     </div>
 </template>
@@ -30,6 +30,7 @@
 </script>
 <style scoped lang="scss">
     @import '../assets/style/style';
+    @import '../assets/style/palettes/palette5';
 
     a {
         color: $primary-color;
@@ -41,8 +42,11 @@
     }
 
     #Contact {
-        padding-bottom: 10px;
-
+        color: $color1;
+        padding-top: 400px;
+        padding-bottom: 150px;
+        margin-top: -200px;
+        //padding-right: 25vw;
         #email {
             @include Oswald;
             @include FontThin;
@@ -64,6 +68,7 @@
 
         }
         #name {
+            text-align: center;
             line-height: 0.81em;
             font-size: 3.5em;
             //letter-spacing: 0.6em;

@@ -30,14 +30,14 @@
     @import '../assets/style/fonts';
 
     .Headline {
-        @include BioRhyme;
+        //@include BioRhyme;
         h2 {
             @include FontThin;
             color: $headline-color;
             border-bottom: 1px solid $border-color;
             font-size: 2.5rem;
             img {
-                width: 2.4rem;
+                width: 1.9rem;
                 margin-right: 0.5em;
             }
         }

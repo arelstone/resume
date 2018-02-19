@@ -1,5 +1,5 @@
 <template>
-    <div id="app" class="container">
+    <div id="app">
         <router-view/>
     </div>
 </template>
@@ -13,9 +13,11 @@
 <style lang="scss">
     @import "~bootstrap-4-grid";
     @import "./assets/style/style";
+    @import "./assets/style/palettes/palette5";
 
     body {
-        padding: 50px 0;
+        padding: 0;
+        margin: 0;
         background: $bg-color;
         color: $text-color;
         @include Lato;

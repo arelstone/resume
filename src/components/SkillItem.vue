@@ -37,14 +37,15 @@
 <style scoped lang="scss">
 
     @import '../assets/style/style';
+    @import '../assets/style/palettes/palette5';
 
-    $skill-color: #088bbf;
+    $skill-color: $color3;
     $class-slug: skill-- !default;
 
     @mixin skillColor($x) {
         //fill: darken($skill-color, ($x*3)/9);
         //fill: darken($skill-color, ($x*3)/9);
-        fill: slategrey;
+        fill: $skill-color;
         //fill: #777777;
     }
 
@@ -75,13 +76,23 @@
 
         /deep/ li {
             padding: 15px 10px;
+            text-align: center;
             @for $i from 1 through 10 {
                 .#{$class-slug}#{$i} {
                     @include skillColor($i);
                 }
             }
-            text-align: center;
+        }
+    }
 
+    .skill-item:hover {
+        .skill--name {
+            font-weight: bold;
+        }
+        /deep/ circle {
+            fill: $color4;
+            stroke: $color4;
+            stroke-width: 3px;
         }
     }
 
