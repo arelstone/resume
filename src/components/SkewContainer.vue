@@ -32,6 +32,10 @@
     $degree: 3deg;
     $color: rgba(#83A0A0, 1);
     section.skew {
+        @media screen and (max-width: 450px) {
+            padding: 0 25px;
+
+        }
         padding: 0 75px;
         transform: skew(0deg, $degree);
         box-shadow: 12px 12px 0px 0 $color;

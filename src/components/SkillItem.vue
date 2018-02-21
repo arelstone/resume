@@ -90,9 +90,7 @@
             font-weight: bold;
         }
         /deep/ circle {
-            fill: $color4;
-            stroke: $color4;
-            stroke-width: 3px;
+            fill: $color1;
         }
     }
 

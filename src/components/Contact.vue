@@ -1,12 +1,15 @@
 <template>
     <div class="row" id="Contact">
         <div class="col-md-4">
-            <h2 id="email"><a :href="`mailto:${email}`">{{email}}</a></h2>
-            <h2 id="phone"><a :href="`tel:${phone}`">{{phone}}</a></h2>
-            <h5 id="address">{{address}} - {{zip}} {{city}}</h5>
+            <div id="info-section">
+                <h2 id="email"><a :href="`mailto:${email}`">{{email}}</a></h2>
+                <h2 id="phone"><a :href="`tel:${phone}`">{{phone}}</a></h2>
+            </div>
         </div>
-        <div class="col-md-12">
-            <h1 id="name">{{name}}</h1>
+        <div class="col-md-8">
+            <div id="name-section">
+                <h1 id="name">{{name}}</h1>
+            </div>
         </div>
     </div>
 </template>
@@ -33,7 +36,7 @@
     @import '../assets/style/palettes/palette5';
 
     a {
-        color: $primary-color;
+        color: $text-color;
         text-decoration: none;
     }
 
@@ -41,8 +44,26 @@
         margin: 3px;
     }
 
+    @mixin padding {
+        padding: 5px;
+        margin: 10px;
+    }
+
+    #name-section {
+        color: white;
+        background: #088bbf;
+        @include padding;
+        height: 120px;
+    }
+
+    #info-section {
+        background: $color2;
+        @include padding;
+        height: 120px;
+    }
+
     #Contact {
-        color: $color1;
+
         padding-top: 400px;
         padding-bottom: 150px;
         margin-top: -200px;

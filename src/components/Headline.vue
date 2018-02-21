@@ -1,7 +1,7 @@
 <template>
     <div class="Headline">
         <h2>
-            <img :src="icon" alt="">{{cText}} /&gt;</h2>
+            <img :src="icon" alt="">{{cText}}$</h2>
     </div>
 </template>
 
