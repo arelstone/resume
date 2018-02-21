@@ -6,7 +6,7 @@
     "email": "arelstone@gmail.com",
     "phone": "+45 61 46 15 71",
     "website": "",
-    "summary": "Mit navn er Carsten Daurehøj, jeg er 32 år og brænder for udvikling. Programmering er ikke blot et job - det er min hobby! Min passion er at lave en lækker frontend der er imødekommende og brugervenlig.<br><br>Jeg er humoristisk, mødestabil, flittig og ønsker altid at blive dygtigere. Jeg trives i et dynamisk arbejdsmiljø, hvor jeg samtidig kan være med til at udforme mine arbejdsopgaver.",
+    "summary": "Jeg er en 33-årig fullstack udvikler, der brænder for programmering. For mig er det ikke blot et job - det er min hobby!<br><br>Jeg er humoristisk, mødestabil, flittig og fleksibel. Jeg trives i et dynamisk arbejdsmiljø, hvor jeg samtidig kan være med til at udforme mine arbejdsopgaver.<br><br>Min værktøjskasse indeholder bl.a. sprog som PHP, SQL og JavaScript samt frameworks som Laravel, VueJs og React. Jeg sætter en ære i at skrive kode af høj kvalitet, der også giver mening for andre. <br><br>For mig er det vigtigt at udvikle mine kompetencer indenfor faget og været opdateret på nye trends. Jeg har derfor et personligt mål om at lære noget nyt hver dag.",
     "location": {
       "address": "Søborg Parkallé 56",
       "postalCode": "2860",
@@ -38,7 +38,7 @@
       "endDate": "Nu",
       "summary": "Description...",
       "highlights": [
-        "Ny udvikling af features i ny arkitektur",
+        "Udvikling af features i ny arkitektur",
         "Bug fixing i gammel arkitektur",
         "Code review"
       ]
@@ -51,8 +51,8 @@
       "endDate": "2017",
       "summary": "Description...",
       "highlights": [
-        "Implementering af agile arbejdsmetoder i form af bl.a. Kanban",
-        "Udvikling af app samt RESTful webservice (hhv. React Native og Laravel) til bortauktionering af ejendele, fra self-storage"
+        "Udvikling af app samt RESTful webservice (React Native og Laravel) til bortauktionering af ejendele fra self-storage",
+        "Implementering af agile arbejdsmetoder i form af bl.a. Kanban og standup møder"
       ]
     },
     {
@@ -64,7 +64,7 @@
       "summary": "",
       "highlights": [
         "Udvikling og opdatering af features til webportal i React",
-        "Udvikling af feature til Firmafon appen, i React Native, til at synkronisere kollegaers telefonnummer og e-mailaddresse til telefonens kontakter",
+        "Udvikling af features bl.a. til synkronisering af kollegaers kontaktoplysninger fra systemet til telefon",
         "Review af kollegaers kode"
       ]
     },
@@ -83,7 +83,7 @@
         "Data visualisering",
         "Drift, vedligeholdelse og overvågning af Webapp hos Microsoft Azure",
         "Administation af Office 365, Active Directory & Box.com",
-        "Diverse ad hoc opgaver, bl.a. opsætning af PCer, support for kollegaer"
+        "Diverse ad hoc opgaver, bl.a. opsætning af PCer, support for kollegaer etc."
       ]
     }
   ],
@@ -108,7 +108,7 @@
     },
     {
       "name": "Laravel",
-      "level": 7,
+      "level": 8,
       "icon": "laravel.svg",
       "type": "framework"
     },
@@ -243,7 +243,7 @@
       "level": "Flydende"
     }
   ],
-  "interests": "De seneste år er meget af min fritid gået med at renovere vores rækkehus, i Søborg, som min kæreste og Jeg købte i 2014. Ud over dette bruger jeg min tid på familie, at gå ture med vores hund samt kamp sporten judo.",
+  "interests": "Min fritid bliver bl.a. brugt på familien, gåture med hunden samt judo. Derudover har jeg brugt de sidste par år på renovering af vores lille rækkehus.",
   "references": [
     {
       "name": "Jane Doe",
