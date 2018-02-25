@@ -3,7 +3,7 @@
         <div class="col-12">
             <headline text="Profiler" :icon="Icon"/>
         </div>
-        <div v-for="profile in profiles" class="col-xs-2 col-sm-4 item">
+        <div v-for="profile in profiles" class="col-xs-12 col-sm-6 item">
             <a :href="profile.url" target="_blank" :title="profile.network">
                 <img :src="`static/img/${profile.icon}`" :alt="profile.network">
                 {{profile.username}}
@@ -47,7 +47,7 @@
         }
             .item {
                 display: inline-block;
-                margin: 20px;
+                margin: 10px 0;
                 img {
                     margin-bottom: -5px;
                     width: 20px;

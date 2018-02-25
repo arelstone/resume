@@ -12,7 +12,7 @@ describe('Headline.vue', () => {
           text: 'Hello world'
         }
       }).$mount()
-      expect(vm.$el.querySelector('h2').textContent).to.equal('Hello world />')
+      expect(vm.$el.querySelector('h2').textContent).to.equal('Hello world')
     })
 
   it('should take a img prop',

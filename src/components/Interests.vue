@@ -1,12 +1,11 @@
 <template>
     <div id="interests">
         <headline :text="$t('Interests')" :icon="Icon"/>
-        <div class="content">{{Utils.ucFirst(interests)}}</div>
+        <div class="content">{{interests}}</div>
     </div>
 </template>
 
 <script>
-  import * as Utils from '../Utils'
   import Headline from './Headline'
   import Icon from '../assets/img/lamp-svgrepo-com.svg'
 
@@ -16,7 +15,7 @@
     description: 'A component for displaying spoken interests',
     token: '<interests :interests="[{}]"/>',
     data () {
-      return {Icon, Utils}
+      return {Icon}
     },
     props: {
       interests: {type: String, required: true, default: '', note: 'A string of text'}

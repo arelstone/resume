@@ -1,7 +1,7 @@
 <template>
     <div id="languages" class="row">
         <headline :text="$t('Languages')" class="col-12" :icon="Icon" />
-        <div v-for="language in languages" class="col-xs-6 col-sm-4 item">
+        <div v-for="language in languages" class="col-xs-12 col-sm-6 item">
             {{language.name}}
             <small>- {{language.level}}</small>
         </div>

@@ -29,8 +29,7 @@
       skillTitle (skill) {
         return `${skill.level} ${skill.name}  - ${ucFirst(skill.type)}`
       }
-    },
-    computed: {}
+    }
   }
 </script>
 
@@ -86,9 +85,6 @@
     }
 
     .skill-item:hover {
-        .skill--name {
-            font-weight: bold;
-        }
         /deep/ circle {
             fill: $color1;
         }

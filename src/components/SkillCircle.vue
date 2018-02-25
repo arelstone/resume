@@ -22,7 +22,6 @@
         note: 'The index of the loop. This is used til calculate the radius of the circle'
       }
     },
-    methods: {},
     computed: {
       size () {
         return Utils.calculateRadius(this.level, this.i)

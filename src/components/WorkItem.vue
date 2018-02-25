@@ -20,7 +20,7 @@
     name: 'work-item',
     introduction: 'Work item',
     description: 'A component for displaying a single work-item',
-    token: '<work-item :work="{position: "" website: "" startDate="" endDate="" :highlights=[]} />',
+    token: '<work-item :work="{position: "" website: "" startDate="" endDate="" highlights=[]} />',
     props: {
       position: {type: String, required: true, note: 'The position I worked as'},
       company: {type: String, required: true, note: 'The company I worked for'},
