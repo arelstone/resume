@@ -10,7 +10,7 @@ Vue.use(Router)
 const routes = [
   {path: '/', name: 'Home', component: Home},
   {path: '*', component: PageNotFound},
-  ...mapDocumentorRoutes(Components)
+  ...mapDocumentorRoutes(Components, false)
 ]
 
 export default new Router({

@@ -17,7 +17,7 @@
   import ComponentList from './components/ComponentList'
 
   export default {
-    name: 'documentor-view',
+    name: 'documentor',
     introduction: '',
     description: '',
     token: '',

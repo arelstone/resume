@@ -1,27 +1,25 @@
 <template>
-    <div class="props">
-        <prop-row>
-            <prop-cell field="name">Prop</prop-cell>
-            <prop-cell field="type">Type</prop-cell>
-            <prop-cell field="defaultValue">Default value</prop-cell>
-            <prop-cell field="description">Description</prop-cell>
-        </prop-row>
-        <prop-row v-for="prop in getProps">
-            <prop-cell field="name">
+    <table class="props">
+        <tr class="props--row">
+            <td class="props--cell">Prop</td>
+            <td class="props--cell">Type</td>
+            <td class="props--cell">Default value</td>
+            <td class="props--cell">Description</td>
+        </tr>
+        <tr v-for="prop in getProps" class="props--row">
+            <td class="props--cell">
                 <b v-if="prop.required">*</b>{{prop.key}}
-            </prop-cell>
-            <prop-cell field="type">{{prop.type}}</prop-cell>
-            <prop-cell field="defaultValue">{{prop.default}}</prop-cell>
-            <prop-cell field="description">
-                <b v-if="prop.required">Required!</b><span v-else>Optional!</span>{{prop.note}}
-            </prop-cell>
-        </prop-row>
-    </div>
+            </td>
+            <td class="props--cell">{{prop.type}}</td>
+            <td class="props--cell">{{prop.default}}</td>
+            <td class="props--cell">
+                <b v-if="prop.required">Required!</b><span v-else>Optional!</span> {{prop.note}}
+            </td>
+        </tr>
+    </table>
 </template>
 
 <script>
-  import PropRow from './Props/PropRow'
-  import PropCell from './Props/PropCell'
 
   export default {
     name: 'props',
@@ -29,7 +27,6 @@
     description: '',
     token: '',
     props: {component: {type: Object, required: true}},
-    components: {PropRow, PropCell},
     methods: {
       getPropType (type) {
         if (typeof type === 'function') {
@@ -65,5 +62,4 @@
 </script>
 
 <style scoped lang="scss">
-
 </style>

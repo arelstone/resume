@@ -1,10 +1,10 @@
-import DocumentorView from './DocumentorView'
+import Documentor from './Documentor'
 import DocItem from './components/DocItem'
 import {mapDocumentorRoutes} from './router'
 import ComponentList from './components/ComponentList'
 
 export {
-  DocumentorView,
+  Documentor,
   DocItem,
   ComponentList,
   mapDocumentorRoutes
