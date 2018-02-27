@@ -1,10 +1,11 @@
 import DocumentorView from './DocumentorView'
 import DocItem from './components/DocItem'
-import {setRouterProps, setRouterData} from './router'
+import {mapDocumentorRoutes} from './router'
+import ComponentList from './components/ComponentList'
 
 export {
   DocumentorView,
   DocItem,
-  setRouterProps,
-  setRouterData
+  ComponentList,
+  mapDocumentorRoutes
 }

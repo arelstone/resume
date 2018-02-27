@@ -1,25 +1,18 @@
-import DocumentorView from '../DocumentorView'
-import DocItem from '../components/DocItem'
+import { DocumentorView, DocItem } from '../main'
 
 function mapChildRoutes (components) {
   return Object.keys(components).map(key => {
     const component = components[key]
-    const obj = {
-      path: `/documentor/${component.name}`,
-      name: key,
-      component: DocItem,
-      props: {component: component}
-    }
-    return obj
+    return {path: `/documentor/${component.name}`, name: component.name, component: DocItem, props: {component}}
   })
 }
 
-export function setRouterData (components, options = {}) {
-  const oPath = options.path || '/documentor'
-  const oName = options.name || 'Documentor'
-  const routes = [
-    {path: oPath, name: oName, component: options.view || DocumentorView, props: {components}},
-    ...mapChildRoutes(components)
-  ]
-  return routes
+export function mapDocumentorRoutes (components) {
+  return [{
+    path: '/documentor',
+    name: 'documentor',
+    component: DocumentorView,
+    props: {components},
+    children: mapChildRoutes(components)
+  }]
 }
