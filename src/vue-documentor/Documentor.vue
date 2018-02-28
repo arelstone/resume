@@ -22,7 +22,7 @@
     description: '',
     token: '',
     props: {
-      components: {type: Object, required: true}
+      components: {type: Array, required: true}
     },
     components: {DocItem, ComponentList}
   }
@@ -33,6 +33,8 @@
         #component-list {
             width: 20%;
             float: left;
+            height: 100vh;
+            position: fixed;
         }
         #component-view {
             width: 75%;
