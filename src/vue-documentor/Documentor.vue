@@ -29,16 +29,6 @@
 </script>
 
 <style lang="scss" scoped>
-    #doc-view {
-        #component-list {
-            width: 20%;
-            float: left;
-            height: 100vh;
-            position: fixed;
-        }
-        #component-view {
-            width: 75%;
-            float: right;
-        }
-    }
+   @import "./style/theme";
+
 </style>

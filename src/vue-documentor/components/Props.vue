@@ -1,22 +1,20 @@
 <template>
-    <table class="props">
-        <tr class="props--row">
-            <td class="props--cell">Prop</td>
-            <td class="props--cell">Type</td>
-            <td class="props--cell">Default value</td>
-            <td class="props--cell">Description</td>
-        </tr>
-        <tr v-for="prop in getProps" class="props--row">
-            <td class="props--cell">
-                <b v-if="prop.required">*</b>{{prop.key}}
-            </td>
-            <td class="props--cell">{{prop.type}}</td>
-            <td class="props--cell">{{prop.default}}</td>
-            <td class="props--cell">
-                <b v-if="prop.required">Required!</b><span v-else>Optional!</span> {{prop.note}}
-            </td>
-        </tr>
-    </table>
+    <div class="props">
+        <div class="props--row header">
+            <div class="props--cell name">Prop</div>
+            <div class="props--cell type">Type</div>
+            <div class="props--cell value">Default value</div>
+            <div class="props--cell description">Description</div>
+        </div>
+        <div v-for="prop in getProps" class="props--row">
+            <div class="props--cell name"><b v-if="prop.required">*</b>{{prop.key}}</div>
+            <div class="props--cell type">{{prop.type}}</div>
+            <div class="props--cell value">{{prop.default}}</div>
+            <div class="props--cell description"><b v-if="prop.required">Required!</b><span v-else>Optional!</span>
+                {{prop.note}}
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>

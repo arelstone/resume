@@ -22,7 +22,7 @@ const mapChildRoutes = (components) => {
       path: `/documentor/${component.name}`,
       name: component.name,
       component: DocItem,
-      props: {component}
+      props: {component},
     }
   })
 }
@@ -47,6 +47,8 @@ const filterComponent = (component) => {
     introduction: component.introduction,
     description: component.description,
     token: component.token,
-    props: component.props
+    props: component.props,
+    filename: component.__file
+
   }
 }

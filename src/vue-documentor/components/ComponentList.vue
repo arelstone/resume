@@ -6,7 +6,7 @@
                 <router-link to="/documentor">All components</router-link>
             </li>
             <li v-for="component in components">
-                <router-link :to="`/documentor/${component.name}`">{{component.name}}</router-link>
+                <router-link :to="`/documentor/${component.name}`">{{getFilename(component.filename)}}</router-link>
             </li>
         </ul>
     </div>
@@ -19,36 +19,23 @@
     description: '',
     token: '',
     props: {
-      components: {type: Array, required: true}
+      components: {type: Array, required: true},
+      source: {type: String, default: 'src/components/'}
+    },
+    methods: {
+      getFilename (filename) {
+        return filename.split(this.source)[1]
+      }
+    },
+    mounted () {
+      this.components.forEach(component => {
+          console.log(component.filename.substring(0, component.filename.indexOf('/')))
+        //console.log(this.getFilename(component.filename))
+      })
     }
   }
 </script>
 
 <style scoped lang="scss">
-    $primary-color: #088bbf;
-    $link-color: #ffffff;
-    @mixin border() {
-        border: 1px solid red;
-    }
-#component-list {
-    background: $primary-color;
 
-}
-    ul {
-        margin: 0;
-        padding: 0;
-        li {
-            list-style: none;
-            padding: 10px 5px;
-            font-size: 12px;
-            a {
-                color: $link-color;
-                text-decoration: none;
-                &:hover{
-                    text-decoration: underline;
-                }
-            }
-
-        }
-    }
 </style>

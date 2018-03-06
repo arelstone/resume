@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Example</h1>
+        <h3>Example</h3>
         <pre>
             <code class="html">{{token}}</code>
         </pre>

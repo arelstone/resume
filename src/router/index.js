@@ -6,12 +6,17 @@ import { mapDocumentorRoutes } from '../vue-documentor'
 import * as Components from '../components'
 
 Vue.use(Router)
-//console.log(mapDocumentorRoutes(Components))
 const routes = [
   {path: '/', name: 'Home', component: Home},
   {path: '*', component: PageNotFound},
   ...mapDocumentorRoutes(Components)
 ]
-export default new Router({
+const router = new Router({
   routes
 })
+router.beforeEach((to, from, next) => {
+  console.log(to)
+  next()
+})
+
+export default router

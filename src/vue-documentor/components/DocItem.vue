@@ -1,11 +1,8 @@
 <template>
     <article class="doc-item" :id="component.name">
-        <h2>
-            <router-link :to="`/documentor/${component.name}`">{{component.name}}</router-link>
-        </h2>
+        <headline :link="`/documentor/${component.name}`">{{component.name}}</headline>
         <p class="doc-item--introduction">{{component.introduction}}</p>
         <p class="doc-item--description">{{component.description}}</p>
-
         <props :component="component"/>
         <example :token="component.token"/>
 
@@ -14,8 +11,8 @@
 </template>
 
 <script>
-  import Props from './Props'
-  import Example from './Example'
+  import { Props, Example } from './index'
+  import Headline from './Headline'
 
   export default {
     name: 'doc-item',
@@ -25,7 +22,7 @@
     props: {
       component: {type: Object, required: true, note: 'The component that needs to be documented'}
     },
-    components: {Props, Example},
+    components: {Props, Example, Headline},
     computed: {
       getProps () {
         return Object.keys(this.component.props).map(key => {

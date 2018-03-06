@@ -66,13 +66,14 @@
 
     #Skills {
         .skill-items {
+            width: 100%;
             margin: 0 15px;
             overflow-x: scroll;
             white-space: nowrap;
 
             &::-webkit-scrollbar {
                 //width: 0.2em;
-                height: 0.4em;
+                height: 0.2em;
                 &-track {
                     -webkit-box-shadow: inset 0 0 0 transparent;
                 }
