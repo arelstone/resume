@@ -31,11 +31,26 @@
   },
   "work": [
     {
+      "company": "Debitoor",
+      "position": "Senior Software developer",
+      "website": "http://debitoor.com",
+      "startDate": "2018",
+      "endDate": "Nu",
+      "summary": "Description...",
+      "highlights": [
+        "Udvikling af features i React Native",
+        "Bugfixing samt refactoring",
+        "Bridging af Native moduler",
+        "Implementering af deeplinking med branch.io",
+        "Tracking af brugere til senere analyse"
+      ]
+    },
+    {
       "company": "Risma Systems",
       "position": "Senior Software developer",
       "website": "http://rismasystems.dk",
       "startDate": "2017",
-      "endDate": "Nu",
+      "endDate": "2018",
       "summary": "Description...",
       "highlights": [
         "Udvikling af features i ny arkitektur",
@@ -132,7 +147,7 @@
     },
     {
       "name": "JavaScript",
-      "level": 8,
+      "level": 9,
       "icon": "javascript.svg",
       "type": "Language"
     },
@@ -150,13 +165,13 @@
     },
     {
       "name": "React",
-      "level": 7,
+      "level": 8,
       "icon": "react.svg",
       "type": "framework"
     },
     {
       "name": "React Native",
-      "level": 7,
+      "level": 8,
       "icon": "react.svg",
       "type": "framework"
     },
