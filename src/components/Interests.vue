@@ -1,7 +1,7 @@
 <template>
     <div id="interests">
         <headline :text="$t('Interests')" :icon="Icon"/>
-        <div class="content">{{interests}}</div>
+        <div class="content" v-html="interests"></div>
     </div>
 </template>
 

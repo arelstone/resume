@@ -7,6 +7,7 @@
             <work-item v-for="item, index in work"
                        :key="index"
                        :position="item.position"
+                       :summary="item.summary"
                        :company="item.company"
                        :website="item.website"
                        :highlights="item.highlights"

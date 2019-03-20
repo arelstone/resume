@@ -24,7 +24,7 @@
     token: '<skills :skills="[{name: "Some skill", level: 2, type: "language|framework|other", icon: "path/to/icon.png"}]">',
     data () {
       return {
-        sortOrder: ['language', 'framework', 'other'],
+        sortOrder: ['language', 'framework', 'dev',  'graphic', 'other'],
         Icon
       }
     },

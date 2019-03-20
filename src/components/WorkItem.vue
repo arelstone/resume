@@ -3,6 +3,7 @@
         <div class="row">
             <div class="col-md-4 work-item--left">
                 <h4>{{position}}</h4>
+                <h5 v-if="summary.length > 0">{{summary}}</h5>
                 <h5><a :href="website" target="_blank">{{company}}</a></h5>
                 <h6>{{startDate}} - {{endDate}}</h6>
             </div>
@@ -23,6 +24,7 @@
     token: '<work-item :work="{position: "" website: "" startDate="" endDate="" highlights=[]} />',
     props: {
       position: {type: String, required: true, note: 'The position I worked as'},
+      summary: {type: String, required: true, note: 'A summary'},
       company: {type: String, required: true, note: 'The company I worked for'},
       website: {type: String, required: true, note: 'The website of the company'},
       highlights: {type: Array, required: true, note: 'An array of highlights'},

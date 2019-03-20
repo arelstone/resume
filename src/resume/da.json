@@ -6,7 +6,7 @@
     "email": "arelstone@gmail.com",
     "phone": "+45 61 46 15 71",
     "website": "",
-    "summary": "Jeg er en 33-årig fullstack udvikler, der brænder for programmering. For mig er det ikke blot et job - det er min hobby!<br><br>Jeg er humoristisk, mødestabil, flittig og fleksibel. Jeg trives i et dynamisk arbejdsmiljø, hvor jeg samtidig kan være med til at udforme mine arbejdsopgaver.<br><br>Min værktøjskasse indeholder bl.a. sprog som PHP, SQL og JavaScript samt frameworks som Laravel, VueJs og React. Jeg sætter en ære i at skrive kode af høj kvalitet, der også giver mening for andre. <br><br>For mig er det vigtigt at udvikle mine kompetencer indenfor faget og været opdateret på nye trends. Jeg har derfor et personligt mål om at lære noget nyt hver dag.",
+    "summary": "Jeg er en 34-årig fullstack udvikler, der elsker programmering. For mig er det ikke blot et job - det er min hobby!<br><br>Jeg er humoristisk, mødestabil, flittig og fleksibel. Jeg trives i et dynamisk arbejdsmiljø, hvor jeg samtidig kan være med til at udforme mine arbejdsopgaver.<br><br>Min værktøjskasse indeholder bl.a. sprog som JavaScript, PHP og SQL samt frameworks som Laravel, VueJs, React or React Native. Jeg sætter en ære i at skrive kode af høj kvalitet, der også giver mening for mine kollegaer.<br><br>For mig er det vigtigt at udvikle mine kompetencer indenfor faget og været opdateret på nye trends. Jeg har derfor et personligt mål om at lære noget nyt hver dag.<br><br>Jeg er meget vellidt af mine kollegaer og prøver at skabe en god stemning omkring mig.",
     "location": {
       "address": "Søborg Parkallé 56",
       "postalCode": "2860",
@@ -36,7 +36,7 @@
       "website": "http://debitoor.com",
       "startDate": "2018",
       "endDate": "Nu",
-      "summary": "Description...",
+      "summary": "",
       "highlights": [
         "Udvikling af features i React Native",
         "Bugfixing samt refactoring",
@@ -51,7 +51,7 @@
       "website": "http://rismasystems.dk",
       "startDate": "2017",
       "endDate": "2018",
-      "summary": "Description...",
+      "summary": "",
       "highlights": [
         "Udvikling af features i ny arkitektur",
         "Bug fixing i gammel arkitektur",
@@ -64,7 +64,7 @@
       "website": "http://it-sharevision.dk",
       "startDate": "2017",
       "endDate": "2017",
-      "summary": "Description...",
+      "summary": "",
       "highlights": [
         "Udvikling af app samt RESTful webservice (React Native og Laravel) til bortauktionering af ejendele fra self-storage",
         "Implementering af agile arbejdsmetoder i form af bl.a. Kanban og standup møder"
@@ -155,7 +155,13 @@
       "name": "yarn",
       "level": 8,
       "icon": "yarn.svg",
-      "type": "other"
+      "type": "dev"
+    },
+    {
+      "name": "npm",
+      "level": 8,
+      "icon": "npm.png",
+      "type": "dev"
     },
     {
       "name": "Windows Azure",
@@ -176,16 +182,22 @@
       "type": "framework"
     },
     {
+      "name": "Redux",
+      "level": 8,
+      "icon": "redux.svg",
+      "type": "framework"
+    },
+    {
       "name": "Grunt",
       "level": 6,
       "icon": "grunt.svg",
-      "type": "other"
+      "type": "dev"
     },
     {
       "name": "Gulp",
       "level": 5,
       "icon": "gulp.svg",
-      "type": "other"
+      "type": "dev"
     },
     {
       "name": "Git",
@@ -209,7 +221,7 @@
       "name": "Webpack",
       "level": 5,
       "icon": "webpack.svg",
-      "type": "other"
+      "type": "dev"
     },
     {
       "name": "SQL",
@@ -233,19 +245,25 @@
       "name": "Illustrator",
       "level": 6,
       "icon": "adobe-illustrator-cc.svg",
-      "type": "other"
+      "type": "graphic"
     },
     {
       "name": "Photoshop",
       "level": 5,
       "icon": "photoshop-cc.svg",
-      "type": "other"
+      "type": "graphic"
     },
     {
       "name": "InDesign",
       "level": 4,
       "icon": "indesign-cc.svg",
-      "type": "other"
+      "type": "graphic"
+    },
+    {
+      "name": "Fastlane",
+      "level": 5,
+      "icon": "fastlane.svg",
+      "type": "dev"
     }
   ],
   "languages": [
@@ -258,7 +276,7 @@
       "level": "Flydende"
     }
   ],
-  "interests": "Min fritid bliver bl.a. brugt på familien, gåture med hunden samt judo. Derudover har jeg brugt de sidste par år på renovering af vores lille rækkehus.",
+  "interests": "Min fritid bliver bl.a. brugt på familien, gåture med hunden samt judo. Ud over min egen træning står jeg for at træne judoklubben børnehold hver tirsdag eftermiddag, hvilket er noget som betyder meget for mig.<br><br>Derudover har jeg brugt de sidste par år på renovering af vores lille rækkehus.",
   "references": [
     {
       "name": "Jane Doe",
